@@ -118,7 +118,13 @@ main {
 
   & .container__right {
     grid-area: right;
-    display: grid;
+    padding: $padding-l;
+
+    &--frame {
+      background: red;
+      display: grid;
+      height: 100%;
+    }
 
     & img {
       align-self: center;

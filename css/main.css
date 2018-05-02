@@ -72,7 +72,11 @@ main {
     border-right: 1px solid #000; }
   main .container__right {
     grid-area: right;
-    display: grid; }
+    padding: 3rem; }
+    main .container__right--frame {
+      background: red;
+      display: grid;
+      height: 100%; }
     main .container__right img {
       align-self: center;
       justify-self: center;
