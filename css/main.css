@@ -40,19 +40,23 @@ header {
   header .nav__right {
     grid-area: nav-right;
     grid-column: 12 / -1; }
-    header .nav__right:hover a {
-      opacity: 0.2; }
     header .nav__right .nav__main {
       display: grid; }
-    header .nav__right .nav__main a {
-      align-self: center;
-      justify-self: end; }
-      header .nav__right .nav__main a:link, header .nav__right .nav__main a:visited {
-        text-decoration: none;
-        color: #333;
-        transition: all 0.2s ease; }
-      header .nav__right .nav__main a:hover {
+      header .nav__right .nav__main ul:hover a {
+        opacity: 0.2; }
+      header .nav__right .nav__main ul li:hover a {
         opacity: 1; }
+      header .nav__right .nav__main ul {
+        list-style: none;
+        text-align: right; }
+      header .nav__right .nav__main ul a {
+        display: block;
+        align-self: center;
+        justify-self: end; }
+        header .nav__right .nav__main ul a:link, header .nav__right .nav__main ul a:visited {
+          text-decoration: none;
+          color: #333;
+          transition: all 0.2s ease; }
 
 /* MAIN CONTENT
 ================================================== */

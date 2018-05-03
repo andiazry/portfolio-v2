@@ -66,18 +66,26 @@ header {
     grid-area: nav-right;
     grid-column: 12 / -1;
 
-    &:hover a {
-      opacity: 0.2;
-    }
-
     // MAIN NAV
 
     & .nav__main {
       display: grid;
-    }
 
-    & .nav__main {
-      & a {
+      & ul:hover a {
+        opacity: 0.2;
+      }
+
+      & ul li:hover a {
+        opacity: 1;
+      }
+
+      & ul {
+        list-style: none;
+        text-align: right;
+      }
+
+      & ul a {
+        display: block;
         align-self: center;
         justify-self: end;
 
@@ -86,10 +94,6 @@ header {
           text-decoration: none;
           color: #333;
           transition: all 0.2s ease;
-        }
-
-        &:hover {
-          opacity: 1;
         }
       }
     }
