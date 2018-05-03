@@ -114,16 +114,27 @@ main {
     background-color: $color-bg-main;
     grid-area: left;
     border-right: 1px solid $color-black;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+
+    &--bio {
+      border-bottom: 1px dashed $color-black;
+    }
   }
 
   & .container__right {
     grid-area: right;
-    padding: $padding-l;
+    padding: 0 0 0 $padding-m;
 
     &--frame {
-      background: red;
+      background: white;
       display: grid;
       height: 100%;
+      transition: all 0.5s ease;
+
+      &:hover {
+        background: red;
+      }
     }
 
     & img {
@@ -179,7 +190,7 @@ a {
 }
 
 h1 {
-  font-size: 6rem;
+  font-size: 4rem;
   font-weight: 400;
 }
 
