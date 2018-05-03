@@ -5,6 +5,7 @@ $color-bg-main: #f7f7f7;
 $color-bg-accent: #f44930;
 $color-white: #fff;
 $color-black: #000;
+$color-black-lighten: lighten($color-black, 50%);
 
 $padding-s: 1rem;
 $padding-m: 2rem;
@@ -43,6 +44,7 @@ header {
   padding: $padding-m 0;
   margin-bottom: $margin-m;
   display: grid;
+  align-self: center;
   grid-template-columns: repeat(12, 1fr);
   grid-template-areas: 'nav-left nav-right';
 
@@ -119,7 +121,7 @@ main {
     grid-template-rows: 1fr 2fr;
 
     &--bio {
-      border-bottom: 1px dashed $color-black;
+      border-bottom: 1px dashed $color-black-lighten;
     }
 
     &--projects {
@@ -180,9 +182,28 @@ footer {
 /* TYPOGRAPHY
 ================================================== */
 
+@font-face {
+  font-family: 'HKGrotesk-Light';
+  src: url('/assets/fonts/HKGrotesk-Light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'HKGrotesk-Regular';
+  src: url('/assets/fonts/HKGrotesk-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'HKGrotesk-Medium';
+  src: url('/assets/fonts/HKGrotesk-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'HKGrotesk-Bold';
+  src: url('/assets/fonts/HKGrotesk-Bold.woff') format('woff');
+}
+
 body {
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 400;
+  font-family: 'HKGrotesk-Regular', sans-serif;
   color: #333;
 }
 
@@ -191,12 +212,13 @@ p {
 }
 
 a {
+  font-family: 'HKGrotesk-Bold', sans-serif;
   font-size: 1.8rem;
   font-weight: 700;
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 4rem;
   font-weight: 400;
 }
 
@@ -206,6 +228,7 @@ h2 {
 }
 
 .project--list {
+  font-family: 'HKGrotesk-Bold', sans-serif;
   font-size: 8rem;
   font-weight: 600;
   margin-top: $margin-l;

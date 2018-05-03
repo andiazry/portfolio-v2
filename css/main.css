@@ -23,6 +23,7 @@ header {
   padding: 2rem 0;
   margin-bottom: 2rem;
   display: grid;
+  align-self: center;
   grid-template-columns: repeat(12, 1fr);
   grid-template-areas: 'nav-left nav-right'; }
   header .nav__left {
@@ -74,7 +75,7 @@ main {
     display: grid;
     grid-template-rows: 1fr 2fr; }
     main .container__left--bio {
-      border-bottom: 1px dashed #000; }
+      border-bottom: 1px dashed gray; }
     main .container__left--projects {
       padding-top: 2rem; }
       main .container__left--projects ul {
@@ -112,20 +113,36 @@ footer {
 
 /* TYPOGRAPHY
 ================================================== */
+@font-face {
+  font-family: 'HKGrotesk-Light';
+  src: url("/assets/fonts/HKGrotesk-Light.woff") format("woff"); }
+
+@font-face {
+  font-family: 'HKGrotesk-Regular';
+  src: url("/assets/fonts/HKGrotesk-Regular.woff") format("woff"); }
+
+@font-face {
+  font-family: 'HKGrotesk-Medium';
+  src: url("/assets/fonts/HKGrotesk-Medium.woff") format("woff"); }
+
+@font-face {
+  font-family: 'HKGrotesk-Bold';
+  src: url("/assets/fonts/HKGrotesk-Bold.woff") format("woff"); }
+
 body {
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 400;
+  font-family: 'HKGrotesk-Regular', sans-serif;
   color: #333; }
 
 p {
   font-size: 1.6rem; }
 
 a {
+  font-family: 'HKGrotesk-Bold', sans-serif;
   font-size: 1.8rem;
   font-weight: 700; }
 
 h1 {
-  font-size: 2rem;
+  font-size: 4rem;
   font-weight: 400; }
 
 h2 {
@@ -133,6 +150,7 @@ h2 {
   font-weight: 200; }
 
 .project--list {
+  font-family: 'HKGrotesk-Bold', sans-serif;
   font-size: 8rem;
   font-weight: 600;
   margin-top: 3rem; }
