@@ -69,14 +69,19 @@ main {
   main .container__left {
     background-color: #f7f7f7;
     grid-area: left;
+    padding-right: 2rem;
     border-right: 1px solid #000;
     display: grid;
-    grid-template-rows: 1fr 1fr; }
+    grid-template-rows: 1fr 2fr; }
     main .container__left--bio {
       border-bottom: 1px dashed #000; }
+    main .container__left--projects {
+      padding-top: 2rem; }
+      main .container__left--projects ul {
+        list-style: none; }
   main .container__right {
     grid-area: right;
-    padding: 0 0 0 2rem; }
+    padding-left: 2rem; }
     main .container__right--frame {
       background: white;
       display: grid;
@@ -113,17 +118,24 @@ body {
   color: #333; }
 
 p {
-  font-size: 1.5rem; }
+  font-size: 1.6rem; }
 
 a {
-  font-size: 1.8rem; }
-
-a {
+  font-size: 1.8rem;
   font-weight: 700; }
 
 h1 {
-  font-size: 4rem;
+  font-size: 2rem;
   font-weight: 400; }
+
+h2 {
+  font-size: 2rem;
+  font-weight: 200; }
+
+.project--list {
+  font-size: 8rem;
+  font-weight: 600;
+  margin-top: 3rem; }
 
 /* KEYFRAMES
 ================================================== */

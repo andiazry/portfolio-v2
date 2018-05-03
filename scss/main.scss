@@ -113,18 +113,27 @@ main {
   & .container__left {
     background-color: $color-bg-main;
     grid-area: left;
+    padding-right: $padding-m;
     border-right: 1px solid $color-black;
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
 
     &--bio {
       border-bottom: 1px dashed $color-black;
+    }
+
+    &--projects {
+      padding-top: $padding-m;
+
+      & ul {
+        list-style: none;
+      }
     }
   }
 
   & .container__right {
     grid-area: right;
-    padding: 0 0 0 $padding-m;
+    padding-left: $padding-m;
 
     &--frame {
       background: white;
@@ -178,20 +187,28 @@ body {
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 
 a {
   font-size: 1.8rem;
-}
-
-a {
   font-weight: 700;
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 2rem;
   font-weight: 400;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 200;
+}
+
+.project--list {
+  font-size: 8rem;
+  font-weight: 600;
+  margin-top: $margin-l;
 }
 
 /* KEYFRAMES
