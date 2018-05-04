@@ -24,7 +24,8 @@ header {
   margin-bottom: 2rem;
   display: grid;
   align-self: center;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: minmax(-webkit-max-content, 1fr);
+  grid-template-columns: minmax(max-content, 1fr);
   grid-template-areas: 'nav-left nav-right'; }
   header .nav__left {
     grid-area: nav-left; }

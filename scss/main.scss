@@ -46,7 +46,7 @@ header {
   margin-bottom: $margin-m;
   display: grid;
   align-self: center;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: minmax(max-content, 1fr);
   grid-template-areas: 'nav-left nav-right';
 
   & .nav__left {
