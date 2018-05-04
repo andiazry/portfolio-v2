@@ -4,7 +4,7 @@
 $color-bg-main: #f7f7f7;
 $color-bg-accent: #f44930;
 $color-white: #fff;
-$color-black: #000;
+$color-black: #333;
 $color-black-lighten: lighten($color-black, 50%);
 
 $padding-s: 1rem;
@@ -29,10 +29,6 @@ $margin-l: 3rem;
 
 html {
   font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
-}
-
-body {
-  padding-bottom: 10rem;
 }
 
 /* NAV
@@ -104,16 +100,13 @@ header {
 ================================================== */
 
 main {
-  height: 115vh;
+  height: 100vh;
   background: $color-bg-main;
   box-sizing: border-box;
   padding: 0 $padding-xl;
-  position: relative;
-  z-index: 2;
-
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 6fr 1fr;
+  grid-template-rows: 1fr 2fr 1fr;
   grid-template-areas: 'nav nav' 'left right' 'footer footer';
 
   & .container__left {
@@ -122,14 +115,14 @@ main {
     padding-right: $padding-m;
     border-right: 1px solid $color-black;
     display: grid;
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
 
     &--bio {
-      border-bottom: 1px dashed $color-black-lighten;
+      // border-bottom: 1px dashed $color-black-lighten;
     }
 
     &--projects {
-      padding-top: $padding-m;
+      // padding-top: $padding-m;
 
       & ul {
         list-style: none;
@@ -165,11 +158,8 @@ main {
 
 footer {
   grid-area: footer;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  bottom: 0;
   width: 100%;
+  height: 15rem;
   background: $color-bg-accent;
   color: $color-white;
   padding: $padding-xl;
@@ -222,20 +212,26 @@ a {
 }
 
 h1 {
+  font-family: 'HKGrotesk-Bold';
   font-size: 4rem;
   font-weight: 400;
 }
 
 h2 {
   font-size: 2rem;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 2rem;
   font-weight: 200;
+  text-decoration: underline;
 }
 
 .project--list {
   font-family: 'HKGrotesk-Bold', sans-serif;
   font-size: 8rem;
   font-weight: 600;
-  margin-top: $margin-l;
 }
 
 /* KEYFRAMES
