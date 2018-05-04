@@ -67,7 +67,8 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 5fr;
-  grid-template-areas: 'nav nav' 'left right'; }
+  grid-template-areas: 'nav nav' 'left right';
+  z-index: 1; }
   main .container__left {
     grid-area: left;
     padding-right: 2rem;
@@ -102,6 +103,26 @@ main {
       align-self: center;
       justify-self: center;
       width: 70%; }
+
+/* OVERLAY
+================================================== */
+aside {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #e9dbc9;
+  padding: 4rem;
+  color: #333;
+  transition: all 0.5s ease;
+  z-index: 2;
+  opacity: 0;
+  visibility: hidden; }
+
+.open {
+  opacity: 1;
+  visibility: visible; }
 
 /* FOOTER
 ================================================== */
