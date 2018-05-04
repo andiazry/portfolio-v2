@@ -31,6 +31,10 @@ html {
   font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
 }
 
+body {
+  background: $color-bg-main;
+}
+
 /* NAV
 ================================================== */
 
@@ -101,16 +105,14 @@ header {
 
 main {
   height: 100vh;
-  background: $color-bg-main;
   box-sizing: border-box;
-  padding: 0 $padding-xl;
+  padding: 0 $padding-xl $padding-m $padding-xl;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 2fr 1fr;
-  grid-template-areas: 'nav nav' 'left right' 'footer footer';
+  grid-template-rows: 1fr 5fr;
+  grid-template-areas: 'nav nav' 'left right';
 
   & .container__left {
-    background-color: $color-bg-main;
     grid-area: left;
     padding-right: $padding-m;
     border-right: 1px solid $color-black;
@@ -124,8 +126,29 @@ main {
     &--projects {
       // padding-top: $padding-m;
 
+      & ul:hover a {
+        opacity: 0.2;
+      }
+
+      & ul li:hover a {
+        opacity: 1;
+      }
+
       & ul {
         list-style: none;
+      }
+
+      & ul a {
+        display: block;
+        align-self: center;
+        justify-self: end;
+
+        &:link,
+        &:visited {
+          text-decoration: none;
+          color: #333;
+          transition: all 0.2s ease;
+        }
       }
     }
   }
@@ -157,7 +180,6 @@ main {
 ================================================== */
 
 footer {
-  grid-area: footer;
   width: 100%;
   height: 15rem;
   background: $color-bg-accent;
@@ -198,7 +220,7 @@ footer {
 
 body {
   font-family: 'HKGrotesk-Regular', sans-serif;
-  color: #333;
+  color: $color-black;
 }
 
 p {
@@ -218,7 +240,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 400;
 }
 
@@ -228,10 +250,9 @@ h3 {
   text-decoration: underline;
 }
 
-.project--list {
+.project--list a {
   font-family: 'HKGrotesk-Bold', sans-serif;
   font-size: 8rem;
-  font-weight: 600;
 }
 
 /* KEYFRAMES

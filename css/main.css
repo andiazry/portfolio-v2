@@ -12,6 +12,9 @@
 html {
   font-size: 62.5%; }
 
+body {
+  background: #f7f7f7; }
+
 /* NAV
 ================================================== */
 header {
@@ -59,22 +62,32 @@ header {
 ================================================== */
 main {
   height: 100vh;
-  background: #f7f7f7;
   box-sizing: border-box;
-  padding: 0 4rem;
+  padding: 0 4rem 2rem 4rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 2fr 1fr;
-  grid-template-areas: 'nav nav' 'left right' 'footer footer'; }
+  grid-template-rows: 1fr 5fr;
+  grid-template-areas: 'nav nav' 'left right'; }
   main .container__left {
-    background-color: #f7f7f7;
     grid-area: left;
     padding-right: 2rem;
     border-right: 1px solid #333;
     display: grid;
     grid-template-rows: 1fr 1fr; }
+    main .container__left--projects ul:hover a {
+      opacity: 0.2; }
+    main .container__left--projects ul li:hover a {
+      opacity: 1; }
     main .container__left--projects ul {
       list-style: none; }
+    main .container__left--projects ul a {
+      display: block;
+      align-self: center;
+      justify-self: end; }
+      main .container__left--projects ul a:link, main .container__left--projects ul a:visited {
+        text-decoration: none;
+        color: #333;
+        transition: all 0.2s ease; }
   main .container__right {
     grid-area: right;
     padding-left: 2rem; }
@@ -93,7 +106,6 @@ main {
 /* FOOTER
 ================================================== */
 footer {
-  grid-area: footer;
   width: 100%;
   height: 15rem;
   background: #f44930;
@@ -139,7 +151,7 @@ h1 {
   font-weight: 400; }
 
 h2 {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 400; }
 
 h3 {
@@ -147,10 +159,9 @@ h3 {
   font-weight: 200;
   text-decoration: underline; }
 
-.project--list {
+.project--list a {
   font-family: 'HKGrotesk-Bold', sans-serif;
-  font-size: 8rem;
-  font-weight: 600; }
+  font-size: 8rem; }
 
 /* KEYFRAMES
 ================================================== */
