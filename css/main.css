@@ -120,10 +120,17 @@ aside {
   z-index: 2;
   opacity: 0;
   visibility: hidden; }
+  aside .bio {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
 
 .open {
   opacity: 1;
   visibility: visible; }
+
+.close {
+  opacity: 0;
+  visibility: hidden; }
 
 /* FOOTER
 ================================================== */
