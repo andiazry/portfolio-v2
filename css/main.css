@@ -134,8 +134,16 @@ footer {
   color: #fff;
   padding: 4rem;
   display: grid;
-  justify-content: left;
+  grid-template-columns: 1fr 1fr;
   align-items: center; }
+  footer .footer__right {
+    justify-self: end; }
+  footer .icon {
+    fill: #fff;
+    width: 2rem;
+    height: 2rem; }
+    footer .icon:not(:last-child) {
+      margin-right: 1rem; }
 
 /* TYPOGRAPHY
 ================================================== */

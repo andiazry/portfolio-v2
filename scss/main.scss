@@ -212,8 +212,22 @@ footer {
   padding: $padding-xl;
 
   display: grid;
-  justify-content: left;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
+
+  & .footer__right {
+    justify-self: end;
+  }
+
+  & .icon {
+    fill: $color-white;
+    width: 2rem;
+    height: 2rem;
+
+    &:not(:last-child) {
+      margin-right: $margin-s;
+    }
+  }
 }
 
 // .spin-img {
