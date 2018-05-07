@@ -93,17 +93,35 @@ main {
   main .container__right {
     grid-area: right;
     padding-left: 2rem; }
-    main .container__right--frame {
+    main .container__right .overlay__toggle {
       background: white;
+      background-image: url("/img/profilePhoto-min.jpg");
+      background-size: 70%;
+      background-repeat: no-repeat;
+      background-position: center;
       display: grid;
       height: 100%;
-      transition: all 0.5s ease; }
-      main .container__right--frame:hover {
-        background: red; }
+      transition: background 0.5s ease; }
+      main .container__right .overlay__toggle:hover {
+        background: #15624f;
+        background-image: url("/img/profilePhoto-min.jpg");
+        background-size: 70%;
+        background-repeat: no-repeat;
+        background-position: center; }
     main .container__right img {
       align-self: center;
       justify-self: center;
       width: 70%; }
+
+.overlay__toggle-test {
+  background: yellow;
+  background-image: url("/img/profilePhoto-min.jpg");
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: grid;
+  height: 100%;
+  transition: all 0.5s ease; }
 
 /* OVERLAY
 ================================================== */
@@ -113,7 +131,7 @@ aside {
   height: 100%;
   top: 0;
   left: 0;
-  background: #e9dbc9;
+  background: #feede6;
   padding: 4rem;
   color: #333;
   transition: all 0.5s ease;
@@ -136,13 +154,13 @@ aside {
 ================================================== */
 footer {
   width: 100%;
-  height: 15rem;
-  background: #f44930;
-  color: #fff;
+  height: 40rem;
+  background: #cee4d9;
+  color: #333;
   padding: 4rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-items: center; }
+  align-items: end; }
   footer .footer__right {
     justify-self: end; }
   footer .icon {
@@ -199,6 +217,10 @@ h3 {
 .project--list a {
   font-family: 'HKGrotesk-Bold', sans-serif;
   font-size: 8rem; }
+
+h4 {
+  font-family: 'HKGrotesk-Bold', sans-serif;
+  font-size: 1.6rem; }
 
 /* KEYFRAMES
 ================================================== */

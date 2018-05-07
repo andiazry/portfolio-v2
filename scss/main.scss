@@ -2,8 +2,8 @@
 ================================================== */
 
 $color-bg-main: #f7f7f7;
-$color-bg-accent: #f44930;
-$color-bg-overlay: #e9dbc9;
+$color-bg-accent: #cee4d9;
+$color-bg-overlay: #feede6;
 $color-white: #fff;
 $color-black: #333;
 $color-black-lighten: lighten($color-black, 50%);
@@ -121,10 +121,6 @@ main {
     display: grid;
     grid-template-rows: 1fr 1fr;
 
-    &--bio {
-      // border-bottom: 1px dashed $color-black-lighten;
-    }
-
     &--projects {
       // padding-top: $padding-m;
 
@@ -159,14 +155,22 @@ main {
     grid-area: right;
     padding-left: $padding-m;
 
-    &--frame {
+    & .overlay__toggle {
       background: white;
+      background-image: url('/img/profilePhoto-min.jpg');
+      background-size: 70%;
+      background-repeat: no-repeat;
+      background-position: center;
       display: grid;
       height: 100%;
-      transition: all 0.5s ease;
+      transition: background 0.5s ease;
 
       &:hover {
-        background: red;
+        background: #15624f;
+        background-image: url('/img/profilePhoto-min.jpg');
+        background-size: 70%;
+        background-repeat: no-repeat;
+        background-position: center;
       }
     }
 
@@ -176,6 +180,17 @@ main {
       width: 70%;
     }
   }
+}
+
+.overlay__toggle-test {
+  background: yellow;
+  background-image: url('/img/profilePhoto-min.jpg');
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: grid;
+  height: 100%;
+  transition: all 0.5s ease;
 }
 
 /* OVERLAY
@@ -216,14 +231,14 @@ aside {
 
 footer {
   width: 100%;
-  height: 15rem;
+  height: 40rem;
   background: $color-bg-accent;
-  color: $color-white;
+  color: $color-black;
   padding: $padding-xl;
 
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-items: center;
+  align-items: end;
 
   & .footer__right {
     justify-self: end;
@@ -302,6 +317,11 @@ h3 {
 .project--list a {
   font-family: 'HKGrotesk-Bold', sans-serif;
   font-size: 8rem;
+}
+
+h4 {
+  font-family: 'HKGrotesk-Bold', sans-serif;
+  font-size: 1.6rem;
 }
 
 /* KEYFRAMES
