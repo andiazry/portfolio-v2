@@ -114,17 +114,17 @@ main {
   grid-template-areas: 'nav nav' 'left right';
   z-index: 1;
 
-  & .container__left {
+  & .containerLeft {
     grid-area: left;
     padding-right: $padding-m;
     border-right: 1px solid $color-black;
     display: grid;
     grid-template-rows: 1fr 1fr;
 
-    &--projects {
+    &__projects {
       // padding-top: $padding-m;
 
-      & ul:hover a {
+      &--list:hover a {
         opacity: 0.2;
       }
 
@@ -151,27 +151,19 @@ main {
     }
   }
 
-  & .container__right {
+  & .containerRight {
     grid-area: right;
     padding-left: $padding-m;
 
-    & .overlay__toggle {
-      background: white;
+    &__overlay {
+      background-color: white;
       background-image: url('/img/profilePhoto-min.jpg');
       background-size: 70%;
       background-repeat: no-repeat;
       background-position: center;
       display: grid;
       height: 100%;
-      transition: background 0.5s ease;
-
-      &:hover {
-        background: #15624f;
-        background-image: url('/img/profilePhoto-min.jpg');
-        background-size: 70%;
-        background-repeat: no-repeat;
-        background-position: center;
-      }
+      transition: background 0.3s ease;
     }
 
     & img {
@@ -182,15 +174,37 @@ main {
   }
 }
 
-.overlay__toggle-test {
-  background: yellow;
-  background-image: url('/img/profilePhoto-min.jpg');
+.project__overlay--01 {
+  background: #15624f;
+  background-image: url('/img/icons/dribbble.svg');
   background-size: 70%;
   background-repeat: no-repeat;
   background-position: center;
   display: grid;
   height: 100%;
-  transition: all 0.5s ease;
+  transition: background 0.3s ease;
+}
+
+.project__overlay--02 {
+  background: #fedb5c;
+  background-image: url('/img/icons/twitter.svg');
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: grid;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.project__overlay--03 {
+  background: #5f7c9b;
+  background-image: url('/img/icons/instagram.svg');
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: grid;
+  height: 100%;
+  transition: all 0.3s ease;
 }
 
 /* OVERLAY
@@ -314,7 +328,7 @@ h3 {
   text-decoration: underline;
 }
 
-.project--list a {
+.containerLeft__projects--list a {
   font-family: 'HKGrotesk-Bold', sans-serif;
   font-size: 8rem;
 }

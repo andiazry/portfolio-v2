@@ -1,16 +1,44 @@
 $(document).ready(function() {
-  $('.overlay__toggle').click(function() {
+  $('.containerRight__overlay').click(function() {
     $('aside').toggleClass('open');
   });
 
-  $('.overlay__hover').hover(
+  $('.containerLeft__projects--list01').hover(
     function() {
-      $('.overlay__toggle').css('background-color', '#15624f');
-      $('.overlay__toggle').css('background-image', 'url(img/icons/dribbble.svg)');
+      $('.containerRight__overlay')
+        .removeClass('containerRight__overlay')
+        .addClass('project__overlay--01');
     },
     function() {
-      $('.overlay__toggle').css('background-color', 'white');
-      $('.overlay__toggle').css('background-image', 'url(img/profilePhoto-min.jpg)');
+      $('.project__overlay--01')
+        .removeClass('project__overlay--01')
+        .addClass('containerRight__overlay');
+    }
+  );
+
+  $('.containerLeft__projects--list02').hover(
+    function() {
+      $('.containerRight__overlay')
+        .removeClass('containerRight__overlay')
+        .addClass('project__overlay--02');
+    },
+    function() {
+      $('.project__overlay--02')
+        .removeClass('project__overlay--02')
+        .addClass('containerRight__overlay');
+    }
+  );
+
+  $('.containerLeft__projects--list03').hover(
+    function() {
+      $('.containerRight__overlay')
+        .removeClass('containerRight__overlay')
+        .addClass('project__overlay--03');
+    },
+    function() {
+      $('.project__overlay--03')
+        .removeClass('project__overlay--03')
+        .addClass('containerRight__overlay');
     }
   );
 });
