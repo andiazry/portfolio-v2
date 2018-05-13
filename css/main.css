@@ -32,11 +32,15 @@ header {
   grid-template-areas: 'nav-left nav-right'; }
   header .nav__left {
     grid-area: nav-left; }
-    header .nav__left #circle {
+    header .nav__left #logo {
       width: 6rem;
       height: 6rem;
       border-radius: 5rem;
       display: inline-block;
+      position: fixed;
+      left: 0;
+      top: 0;
+      margin: 2rem 4rem;
       background: #c66d5f;
       background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
       -webkit-animation: hueRotate 8s linear infinite;
@@ -152,7 +156,7 @@ aside {
 footer {
   width: 100%;
   height: 40rem;
-  background: #f0e9e0;
+  background: #f2f1eb;
   color: #000;
   padding: 4rem;
   display: grid;

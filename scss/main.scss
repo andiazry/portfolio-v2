@@ -2,7 +2,7 @@
 ================================================== */
 
 $color-bg-main: #f7f7f7;
-$color-bg-accent: #f0e9e0;
+$color-bg-accent: #f2f1eb;
 $color-bg-overlay: #c66d5f;
 $color-white: #fff;
 $color-black: #000;
@@ -56,11 +56,15 @@ header {
   & .nav__left {
     grid-area: nav-left;
 
-    & #circle {
+    & #logo {
       width: 6rem;
       height: 6rem;
       border-radius: 5rem;
       display: inline-block;
+      position: fixed;
+      left: 0;
+      top: 0;
+      margin: $margin-m $padding-xl;
       background: $color-bg-overlay;
       background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
       animation: hueRotate 8s linear infinite;
