@@ -2,10 +2,10 @@
 ================================================== */
 
 $color-bg-main: #f7f7f7;
-$color-bg-accent: #cee4d9;
-$color-bg-overlay: #feede6;
+$color-bg-accent: #f0e9e0;
+$color-bg-overlay: #c66d5f;
 $color-white: #fff;
-$color-black: #333;
+$color-black: #000;
 $color-black-lighten: lighten($color-black, 50%);
 
 $padding-s: 1rem;
@@ -16,6 +16,9 @@ $padding-xl: 4rem;
 $margin-s: 1rem;
 $margin-m: 2rem;
 $margin-l: 3rem;
+
+/* EXTENDS
+================================================== */
 
 /* BASE
 ================================================== */
@@ -36,7 +39,7 @@ body {
   background: $color-bg-main;
 }
 
-/* NAV
+/* HEADER
 ================================================== */
 
 header {
@@ -46,6 +49,7 @@ header {
   margin-bottom: $margin-m;
   display: grid;
   align-self: center;
+  align-items: center;
   grid-template-columns: minmax(max-content, 1fr);
   grid-template-areas: 'nav-left nav-right';
 
@@ -57,8 +61,8 @@ header {
       height: 6rem;
       border-radius: 5rem;
       display: inline-block;
-      background: red;
-      background: linear-gradient(90deg, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+      background: $color-bg-overlay;
+      background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
       animation: hueRotate 8s linear infinite;
     }
   }
@@ -66,36 +70,30 @@ header {
   & .nav__right {
     grid-area: nav-right;
     grid-column: 12 / -1;
+  }
 
-    // MAIN NAV
+  & .nav__main {
+    display: grid;
 
-    & .nav__main {
-      display: grid;
+    & ul {
+      list-style: none;
+      text-align: right;
+    }
 
-      & ul:hover a {
-        opacity: 0.2;
-      }
+    & ul:hover a {
+      opacity: 0.2;
+    }
 
-      & ul li:hover a {
-        opacity: 1;
-      }
+    & ul li:hover a {
+      opacity: 1;
+    }
 
-      & ul {
-        list-style: none;
-        text-align: right;
-      }
-
-      & ul a {
-        display: block;
-        align-self: center;
-        justify-self: end;
-
-        &:link,
-        &:visited {
-          text-decoration: none;
-          color: #333;
-          transition: all 0.2s ease;
-        }
+    & ul a {
+      &:link,
+      &:visited {
+        text-decoration: none;
+        color: $color-black;
+        transition: all 0.2s ease;
       }
     }
   }
@@ -112,17 +110,25 @@ main {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 5fr;
   grid-template-areas: 'nav nav' 'left right';
-  z-index: 1;
 
   & .containerLeft {
     grid-area: left;
     padding-right: $padding-m;
     border-right: 1px solid $color-black;
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+
+    &__bio {
+      border-bottom: 1px dashed $color-black;
+    }
 
     &__projects {
-      // padding-top: $padding-m;
+      padding-top: $padding-m;
+      display: grid;
+
+      &--list {
+        align-self: end;
+      }
 
       &--list:hover a {
         opacity: 0.2;
@@ -137,14 +143,10 @@ main {
       }
 
       & ul a {
-        display: block;
-        align-self: center;
-        justify-self: end;
-
         &:link,
         &:visited {
           text-decoration: none;
-          color: #333;
+          color: $color-black;
           transition: all 0.2s ease;
         }
       }
@@ -158,53 +160,34 @@ main {
     &__overlay {
       background-color: white;
       background-image: url('/img/profilePhoto-min.jpg');
-      background-size: 70%;
-      background-repeat: no-repeat;
-      background-position: center;
-      display: grid;
-      height: 100%;
-      transition: background 0.3s ease;
-    }
-
-    & img {
-      align-self: center;
-      justify-self: center;
-      width: 70%;
     }
   }
 }
 
 .project__overlay--01 {
-  background: #15624f;
-  background-image: url('/img/icons/dribbble.svg');
-  background-size: 70%;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: grid;
-  height: 100%;
-  transition: background 0.3s ease;
+  background: #cee4d9;
+  background-image: url('/img/profilePhoto-min.jpg');
 }
 
 .project__overlay--02 {
-  background: #fedb5c;
-  background-image: url('/img/icons/twitter.svg');
-  background-size: 70%;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: grid;
-  height: 100%;
-  transition: all 0.3s ease;
+  background: #f6d952;
+  background-image: url('/img/profilePhoto-min.jpg');
 }
 
 .project__overlay--03 {
-  background: #5f7c9b;
-  background-image: url('/img/icons/instagram.svg');
+  background: #e8dfd8;
+  background-image: url('/img/profilePhoto-min.jpg');
+}
+
+.containerRight__overlay,
+.project__overlay--01,
+.project__overlay--02,
+.project__overlay--03 {
   background-size: 70%;
   background-repeat: no-repeat;
   background-position: center;
-  display: grid;
   height: 100%;
-  transition: all 0.3s ease;
+  transition: background 0.3s ease;
 }
 
 /* OVERLAY
@@ -269,10 +252,6 @@ footer {
   }
 }
 
-// .spin-img {
-//   animation: spin 5s linear infinite;
-// }
-
 /* TYPOGRAPHY
 ================================================== */
 
@@ -306,26 +285,22 @@ p {
 }
 
 a {
-  font-family: 'HKGrotesk-Bold', sans-serif;
-  font-size: 1.8rem;
-  font-weight: 700;
+  font-family: 'HKGrotesk-Medium', sans-serif;
+  font-size: 1.6rem;
+}
+
+.nav__main--active {
+  text-decoration: line-through;
 }
 
 h1 {
-  font-family: 'HKGrotesk-Bold';
-  font-size: 4rem;
-  font-weight: 400;
+  font-family: 'HKGrotesk-Bold', sans-serif;
+  font-size: 3rem;
 }
 
 h2 {
-  font-size: 3rem;
-  font-weight: 400;
-}
-
-h3 {
+  font-family: 'HKGrotesk-Light', sans-serif;
   font-size: 2rem;
-  font-weight: 200;
-  text-decoration: underline;
 }
 
 .containerLeft__projects--list a {
@@ -335,7 +310,7 @@ h3 {
 
 h4 {
   font-family: 'HKGrotesk-Bold', sans-serif;
-  font-size: 1.6rem;
+  font-size: 2rem;
 }
 
 /* KEYFRAMES
