@@ -1,0 +1,64 @@
+@import 'variables';
+
+@font-face {
+  font-family: 'HKGrotesk-Light';
+  src: url('/assets/fonts/HKGrotesk-Light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'HKGrotesk-Regular';
+  src: url('/assets/fonts/HKGrotesk-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'HKGrotesk-Medium';
+  src: url('/assets/fonts/HKGrotesk-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'HKGrotesk-Bold';
+  src: url('/assets/fonts/HKGrotesk-Bold.woff') format('woff');
+}
+
+body {
+  font-family: 'HKGrotesk-Regular', sans-serif;
+  color: $color-black;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+a {
+  font-family: 'HKGrotesk-Medium', sans-serif;
+  font-size: 1.6rem;
+}
+
+.nav__main--active {
+  text-decoration: line-through;
+}
+
+h1 {
+  font-family: 'HKGrotesk-Bold', sans-serif;
+  font-size: 3rem;
+}
+
+h2 {
+  font-family: 'HKGrotesk-Light', sans-serif;
+  font-size: 2rem;
+}
+
+.containerLeft__projects--list a {
+  font-family: 'HKGrotesk-Bold', sans-serif;
+  font-size: 8rem;
+}
+
+h4 {
+  font-family: 'HKGrotesk-Bold', sans-serif;
+  font-size: 2rem;
+}
+
+aside h1 {
+  color: $color-white;
+  font-size: 2.8rem;
+}
