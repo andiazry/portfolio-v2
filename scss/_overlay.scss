@@ -17,6 +17,18 @@ aside {
   & .bio {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-top: 8rem;
+  }
+
+  & .containerRight__overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: $padding-xl;
+
+    & img {
+      width: 4rem;
+    }
   }
 }
 

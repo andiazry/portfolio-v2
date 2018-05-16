@@ -48,6 +48,10 @@ aside h1 {
   color: #fff;
   font-size: 2.8rem; }
 
+aside h2 {
+  color: #fff;
+  font-size: 3.2rem; }
+
 *,
 *::after,
 *::before {
@@ -76,13 +80,19 @@ aside {
   visibility: hidden; }
   aside .bio {
     display: grid;
-    grid-template-columns: 1fr 1fr; }
+    grid-template-columns: 1fr 1fr;
+    margin-top: 8rem; }
+  aside .containerRight__overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 4rem; }
+    aside .containerRight__overlay img {
+      width: 4rem; }
 
 .open {
   opacity: 1;
-  visibility: visible;
-  top: 0;
-  left: 0; }
+  visibility: visible; }
 
 @-webkit-keyframes hueRotate {
   from {
