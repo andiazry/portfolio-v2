@@ -42,15 +42,15 @@ header {
   }
 
   & .nav__main {
-    display: grid;
+    display: inline-block;
 
-    & ul {
-      list-style: none;
-      text-align: right;
-    }
-
-    & ul:hover a {
-      opacity: 0.2;
+    & a {
+      &:link,
+      &:visited {
+        text-decoration: none;
+        color: $color-black;
+        transition: all 0.2s ease;
+      }
     }
 
     & ul li:hover a {
@@ -58,12 +58,6 @@ header {
     }
 
     & ul a {
-      &:link,
-      &:visited {
-        text-decoration: none;
-        color: $color-black;
-        transition: all 0.2s ease;
-      }
     }
   }
 }
@@ -127,7 +121,7 @@ main {
     grid-area: right;
     padding-left: $padding-m;
 
-    &__overlay {
+    &__photo {
       background-color: white;
       background-image: url('/img/profilePhoto-min.jpg');
     }
@@ -135,21 +129,21 @@ main {
 }
 
 .project__overlay--01 {
-  background: #cee4d9;
+  background: #d29e80;
   background-image: url('/img/profilePhoto-min.jpg');
 }
 
 .project__overlay--02 {
-  background: #f6d952;
+  background: #f6df81;
   background-image: url('/img/profilePhoto-min.jpg');
 }
 
 .project__overlay--03 {
-  background: #e8dfd8;
+  background: #eddce0;
   background-image: url('/img/profilePhoto-min.jpg');
 }
 
-.containerRight__overlay,
+.containerRight__photo,
 .project__overlay--01,
 .project__overlay--02,
 .project__overlay--03 {
