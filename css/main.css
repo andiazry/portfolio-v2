@@ -156,7 +156,6 @@ aside {
 /* HEADER
 ================================================== */
 header {
-  background: #f7f7f7;
   padding: 0 3rem;
   position: fixed;
   left: 0;
@@ -165,7 +164,6 @@ header {
   header .nav__container {
     padding: 2rem 0;
     margin: 0 1rem;
-    border-bottom: 1px solid #000;
     display: grid;
     align-self: center;
     align-items: center;
@@ -182,7 +180,8 @@ header {
       background: #f44930; }
   header .nav__right {
     grid-area: nav-right;
-    grid-column: 12 / -1; }
+    grid-column: 12 / -1;
+    padding-right: 2rem; }
   header .nav__main {
     display: inline-block; }
     header .nav__main a:link, header .nav__main a:visited {
@@ -196,11 +195,11 @@ main {
   height: 100vh;
   background: #f7f7f7;
   box-sizing: border-box;
-  padding: 0 4rem 2rem 4rem;
+  padding: 2rem 4rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 5fr;
-  grid-template-areas: 'nav nav' 'left right'; }
+  grid-template-areas: 'left right' 'left right'; }
   main .containerLeft {
     grid-area: left;
     padding-right: 2rem;
@@ -208,6 +207,7 @@ main {
     display: grid;
     grid-template-rows: 1fr 2fr; }
     main .containerLeft__bio {
+      padding-left: 8rem;
       border-bottom: 1px dashed #000; }
     main .containerLeft__projects {
       padding-top: 2rem;

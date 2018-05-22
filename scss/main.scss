@@ -8,7 +8,7 @@
 ================================================== */
 
 header {
-  background: $color-bg-main;
+  // background: $color-bg-main;
   padding: 0 $padding-l;
   position: fixed;
   left: 0;
@@ -18,7 +18,7 @@ header {
   & .nav__container {
     padding: $padding-m 0;
     margin: 0 $margin-s;
-    border-bottom: 1px solid $color-black;
+    // border-bottom: 1px solid $color-black;
     display: grid;
     align-self: center;
     align-items: center;
@@ -44,6 +44,7 @@ header {
   & .nav__right {
     grid-area: nav-right;
     grid-column: 12 / -1;
+    padding-right: $padding-m;
   }
 
   & .nav__main {
@@ -67,11 +68,11 @@ main {
   height: 100vh;
   background: $color-bg-main;
   box-sizing: border-box;
-  padding: 0 $padding-xl $padding-m $padding-xl;
+  padding: $padding-m $padding-xl;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 5fr;
-  grid-template-areas: 'nav nav' 'left right';
+  grid-template-areas: 'left right' 'left right';
 
   & .containerLeft {
     grid-area: left;
@@ -81,6 +82,7 @@ main {
     grid-template-rows: 1fr 2fr;
 
     &__bio {
+      padding-left: 8rem;
       border-bottom: 1px dashed $color-black;
     }
 
