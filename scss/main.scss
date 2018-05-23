@@ -8,8 +8,7 @@
 ================================================== */
 
 header {
-  // background: $color-bg-main;
-  padding: 0 $padding-l;
+  padding: 0 $padding-m;
   position: fixed;
   left: 0;
   top: 0;
@@ -17,7 +16,7 @@ header {
 
   & .nav__container {
     padding: $padding-m 0;
-    margin: 0 $margin-s;
+    margin: 0;
     // border-bottom: 1px solid $color-black;
     display: grid;
     align-self: center;
@@ -35,7 +34,6 @@ header {
       border-radius: 5rem;
       display: inline-block;
       background: $color-bg-accent;
-      // background: $color-bg-overlay;
       // background: linear-gradient(90deg, #3f2b96 0%, #a8c0ff 100%);
       // animation: hueRotate 8s linear infinite;
     }
@@ -44,7 +42,7 @@ header {
   & .nav__right {
     grid-area: nav-right;
     grid-column: 12 / -1;
-    padding-right: $padding-m;
+    padding-right: $padding-l;
   }
 
   & .nav__main {
@@ -66,9 +64,9 @@ header {
 
 main {
   height: 100vh;
-  background: $color-bg-main;
   box-sizing: border-box;
-  padding: $padding-m $padding-xl;
+  padding: $padding-m;
+  background: $color-bg-main;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 5fr;
@@ -119,7 +117,7 @@ main {
 
   & .containerRight {
     grid-area: right;
-    padding-left: $padding-m;
+    // padding-left: $padding-m;
 
     &__photo {
       background-color: white;
@@ -162,8 +160,7 @@ footer {
   height: 40rem;
   background: $color-bg-accent;
   color: $color-black;
-  padding: $padding-xl;
-
+  padding: $padding-l $padding-m;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: end;
@@ -173,7 +170,6 @@ footer {
   }
 
   & .icon {
-    fill: $color-white;
     width: 2rem;
     height: 2rem;
 
