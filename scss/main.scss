@@ -13,6 +13,8 @@ header {
   left: 0;
   top: 0;
   width: 100%;
+  background-color: transparent;
+  transition: all 0.4s ease;
 
   & .nav__container {
     padding: $padding-m 0;
@@ -57,6 +59,10 @@ header {
       }
     }
   }
+}
+
+header.scrolled {
+  background-color: white;
 }
 
 /* MAIN CONTENT
@@ -127,29 +133,36 @@ main {
 }
 
 .project__overlay--01 {
-  background: #d29e80;
+  background-color: #d29e80;
   background-image: url('/img/profilePhoto-min.jpg');
 }
 
 .project__overlay--02 {
-  background: #f6df81;
+  background-color: #f6df81;
   background-image: url('/img/profilePhoto-min.jpg');
 }
 
 .project__overlay--03 {
-  background: #eddce0;
-  background-image: url('/img/profilePhoto-min.jpg');
+  background-color: #eddce0;
+  background-image: url('/img/arena-landing-03.png');
 }
 
 .containerRight__photo,
 .project__overlay--01,
-.project__overlay--02,
-.project__overlay--03 {
+.project__overlay--02 {
   background-size: 70%;
   background-repeat: no-repeat;
   background-position: center;
   height: 100%;
-  transition: all 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+.project__overlay--03 {
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  transition: background-color 0.3s ease;
 }
 
 /* FOOTER
