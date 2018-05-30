@@ -15,7 +15,7 @@ header {
   width: 100%;
   background-color: transparent;
   transition: all 0.4s ease;
-  z-index: 100;
+  z-index: 10;
 
   & .nav__container {
     padding: $padding-m 0;
