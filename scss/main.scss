@@ -3,6 +3,7 @@
 @import 'base';
 @import 'overlay';
 @import 'animations';
+@import 'projects';
 
 /* HEADER
 ================================================== */
@@ -172,7 +173,7 @@ main {
 footer {
   width: 100%;
   height: 40rem;
-  background: $color-bg-accent;
+  background: $color-bg-secondary;
   color: $color-black;
   padding: $padding-l $padding-m;
   display: grid;

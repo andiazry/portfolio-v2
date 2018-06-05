@@ -5,7 +5,7 @@ $(document).ready(function() {
   });
 
   // About page overlay toggle
-  $('.containerRight__overlay').click(function() {
+  $('.nav__main--overlay').click(function() {
     $('aside').toggleClass('open');
   });
 
