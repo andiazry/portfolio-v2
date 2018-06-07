@@ -171,11 +171,12 @@ main {
 ================================================== */
 
 footer {
-  width: 100%;
+  width: 100vw;
   height: 40rem;
   // background: $color-bg-secondary;
   color: $color-black;
-  padding: $padding-l $padding-m;
+  padding: $padding-m;
+  border-top: 1px dashed $color-black;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: end;
