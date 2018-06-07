@@ -28,7 +28,8 @@ a {
 .nav__main--active {
   text-decoration: line-through; }
 
-.nav__main a {
+.nav__main a,
+.projects--body {
   font-size: 3rem; }
 
 h1 {
@@ -39,7 +40,8 @@ h2 {
   font-family: 'HKGrotesk-Light', sans-serif;
   font-size: 2rem; }
 
-.containerLeft__projects--list a {
+.containerLeft__projects--list a,
+.projects--title {
   font-family: 'HKGrotesk-Bold', sans-serif;
   font-size: 11rem;
   line-height: 1.1; }
@@ -157,6 +159,22 @@ aside {
   100% {
     opacity: 1;
     visibility: visible; } }
+
+.projects__main {
+  padding: 2rem;
+  background: #f7f7f7;
+  width: 100%; }
+
+.projects__info {
+  margin: 20rem 0 4rem;
+  padding: 4rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000; }
+
+.projects__case img {
+  width: 100%; }
 
 /* HEADER
 ================================================== */

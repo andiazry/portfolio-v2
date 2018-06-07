@@ -1,1 +1,20 @@
 @import 'variables';
+
+.projects__main {
+  padding: $padding-m;
+  background: $color-bg-main;
+  width: 100%;
+}
+
+.projects__info {
+  margin: 20rem 0 $margin-xl;
+  padding: $padding-xl 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top: 1px solid $color-black;
+  border-bottom: 1px solid $color-black;
+}
+
+.projects__case img {
+  width: 100%;
+}

@@ -38,7 +38,8 @@ a {
   text-decoration: line-through;
 }
 
-.nav__main a {
+.nav__main a,
+.projects--body {
   font-size: 3rem;
 }
 
@@ -52,7 +53,8 @@ h2 {
   font-size: 2rem;
 }
 
-.containerLeft__projects--list a {
+.containerLeft__projects--list a,
+.projects--title {
   font-family: 'HKGrotesk-Bold', sans-serif;
   font-size: 11rem;
   line-height: 1.1;
