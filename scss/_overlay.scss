@@ -8,7 +8,7 @@ aside {
   left: 0;
   background: $color-black;
   padding: $padding-xl;
-  color: $color-black;
+  color: $color-white;
   transition: all 0.2s ease;
   z-index: 100;
   opacity: 0;
@@ -19,6 +19,15 @@ aside {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top: 8rem;
+  }
+
+  & .bio__left--item {
+    margin-top: $margin-xl;
+    line-height: 1.5;
+  }
+
+  & .bio__left--item:first-child {
+    margin-top: 0;
   }
 
   & .nav__main--overlay {
