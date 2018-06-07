@@ -14,4 +14,9 @@ html {
 
 body {
   background: $color-bg-main;
+  cursor: url('../img/cursor--arrow.png'), auto;
+
+  & a:hover {
+    cursor: url('../img/cursor--circle.png'), auto;
+  }
 }

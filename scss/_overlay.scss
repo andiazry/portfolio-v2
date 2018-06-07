@@ -13,6 +13,7 @@ aside {
   z-index: 100;
   opacity: 0;
   visibility: hidden;
+  cursor: url('../img/cursor--white.png'), auto;
 
   & .bio {
     display: grid;

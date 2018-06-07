@@ -67,7 +67,10 @@ html {
   font-size: 62.5%; }
 
 body {
-  background: #f7f7f7; }
+  background: #f7f7f7;
+  cursor: url("../img/cursor--arrow.png"), auto; }
+  body a:hover {
+    cursor: url("../img/cursor--circle.png"), auto; }
 
 aside {
   position: fixed;
@@ -81,7 +84,8 @@ aside {
   transition: all 0.2s ease;
   z-index: 100;
   opacity: 0;
-  visibility: hidden; }
+  visibility: hidden;
+  cursor: url("../img/cursor--white.png"), auto; }
   aside .bio {
     display: grid;
     grid-template-columns: 1fr 1fr;
