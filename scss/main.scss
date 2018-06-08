@@ -72,12 +72,10 @@ header.scrolled {
 
 main {
   height: 100vh;
-  box-sizing: border-box;
   padding: $padding-m;
   background: $color-bg-main;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 5fr;
   grid-template-areas: 'left right' 'left right';
 
   & .containerLeft {
@@ -85,7 +83,7 @@ main {
     padding-right: $padding-m;
     border-right: 1px solid $color-black;
     display: grid;
-    grid-template-rows: 1fr 3fr;
+    grid-template-rows: 1fr 2fr;
 
     &__bio {
       padding-left: 8rem;
@@ -172,25 +170,19 @@ main {
 
 footer {
   width: 100vw;
-  height: 40rem;
+  height: 32rem;
   // background: $color-bg-secondary;
   color: $color-black;
-  padding: $padding-m;
+  padding: 15rem $padding-m;
   border-top: 1px dashed $color-black;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: end;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 
-  & .footer__right {
-    justify-self: end;
+  & h4 {
+    padding-bottom: $padding-m;
   }
 
-  & .icon {
-    width: 2rem;
-    height: 2rem;
-
-    &:not(:last-child) {
-      margin-right: $margin-s;
-    }
+  & p {
+    line-height: 1.5;
   }
 }
