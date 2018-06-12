@@ -15,51 +15,54 @@
   src: url("/assets/fonts/HKGrotesk-Bold.woff") format("woff"); }
 
 body {
-  font-family: 'HKGrotesk-Regular', sans-serif;
+  font-family: "HKGrotesk-Regular", sans-serif, sans-serif;
   color: #000; }
+
+.projects--body {
+  font-family: "HKGrotesk-Medium", sans-serif, sans-serif;
+  font-size: 2rem; }
 
 p {
   font-size: 1.6rem; }
 
 a {
-  font-family: 'HKGrotesk-Medium', sans-serif;
+  font-family: "HKGrotesk-Medium", sans-serif, sans-serif;
   font-size: 1.6rem; }
 
 .nav__main--active {
   text-decoration: line-through; }
 
-.nav__main a,
-.projects--body {
+.nav__main a {
   font-size: 3rem; }
 
 h1 {
-  font-family: 'HKGrotesk-Bold', sans-serif;
+  font-family: "HKGrotesk-Bold", sans-serif, sans-serif;
   font-size: 3rem; }
 
 h2 {
-  font-family: 'HKGrotesk-Light', sans-serif;
+  font-family: "HKGrotesk-Light", sans-serif, sans-serif;
   font-size: 2rem; }
 
 h3 {
-  font-family: 'HKGrotesk-Bold', sans-serif;
+  font-family: "HKGrotesk-Bold", sans-serif, sans-serif;
   font-size: 2rem;
   padding-bottom: 2rem; }
 
+h4 {
+  font-family: "HKGrotesk-Bold", sans-serif, sans-serif;
+  font-size: 2rem; }
+
 .containerLeft__projects--list a,
 .projects--title {
-  font-family: 'HKGrotesk-Bold', sans-serif;
+  font-family: "HKGrotesk-Bold", sans-serif, sans-serif;
   font-size: 11rem;
   line-height: 1.1; }
-
-h4 {
-  font-family: 'HKGrotesk-Bold', sans-serif;
-  font-size: 2rem; }
 
 aside h1 {
   color: #fff;
   font-size: 2.8rem; }
 
-aside h2 {
+aside .bio__body {
   color: #fff;
   font-size: 3.2rem; }
 
@@ -185,6 +188,12 @@ aside {
 
 .projects__case img {
   width: 100%; }
+
+.projects__footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+  .projects__footer .footer__right {
+    text-align: right; }
 
 /* HEADER
 ================================================== */

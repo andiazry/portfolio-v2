@@ -21,8 +21,13 @@
 }
 
 body {
-  font-family: 'HKGrotesk-Regular', sans-serif;
+  font-family: $typeface-regular, sans-serif;
   color: $color-black;
+}
+
+.projects--body {
+  font-family: $typeface-medium, sans-serif;
+  font-size: 2rem;
 }
 
 p {
@@ -30,7 +35,7 @@ p {
 }
 
 a {
-  font-family: 'HKGrotesk-Medium', sans-serif;
+  font-family: $typeface-medium, sans-serif;
   font-size: 1.6rem;
 }
 
@@ -38,37 +43,36 @@ a {
   text-decoration: line-through;
 }
 
-.nav__main a,
-.projects--body {
+.nav__main a {
   font-size: 3rem;
 }
 
 h1 {
-  font-family: 'HKGrotesk-Bold', sans-serif;
+  font-family: $typeface-bold, sans-serif;
   font-size: 3rem;
 }
 
 h2 {
-  font-family: 'HKGrotesk-Light', sans-serif;
+  font-family: $typeface-light, sans-serif;
   font-size: 2rem;
 }
 
 h3 {
-  font-family: 'HKGrotesk-Bold', sans-serif;
+  font-family: $typeface-bold, sans-serif;
   font-size: 2rem;
   padding-bottom: $padding-m;
 }
 
-.containerLeft__projects--list a,
-.projects--title {
-  font-family: 'HKGrotesk-Bold', sans-serif;
-  font-size: 11rem;
-  line-height: 1.1;
+h4 {
+  font-family: $typeface-bold, sans-serif;
+  font-size: 2rem;
 }
 
-h4 {
-  font-family: 'HKGrotesk-Bold', sans-serif;
-  font-size: 2rem;
+.containerLeft__projects--list a,
+.projects--title {
+  font-family: $typeface-bold, sans-serif;
+  font-size: 11rem;
+  line-height: 1.1;
 }
 
 aside h1 {
@@ -76,7 +80,7 @@ aside h1 {
   font-size: 2.8rem;
 }
 
-aside h2 {
+aside .bio__body {
   color: $color-white;
   font-size: 3.2rem;
 }

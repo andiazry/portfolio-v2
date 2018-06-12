@@ -18,3 +18,12 @@
 .projects__case img {
   width: 100%;
 }
+
+.projects__footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  & .footer__right {
+    text-align: right;
+  }
+}
