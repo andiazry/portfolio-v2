@@ -77,7 +77,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  background: #f7f7f7;
+  background: #faf9f7;
   cursor: url("../img/cursor--arrow.png"), auto; }
   body a:hover {
     cursor: url("../img/cursor--circle.png"), auto; }
@@ -175,7 +175,7 @@ aside {
 
 .projects__main {
   padding: 2rem;
-  background: #f7f7f7;
+  background: #faf9f7;
   width: 100%; }
 
 .projects__info {
@@ -242,7 +242,7 @@ header.scrolled {
 main {
   height: 100vh;
   padding: 2rem;
-  background: #f7f7f7;
+  background: #faf9f7;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: 'left right' 'left right'; }
