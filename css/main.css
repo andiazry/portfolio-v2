@@ -120,6 +120,36 @@ aside {
   opacity: 1;
   visibility: visible; }
 
+@-webkit-keyframes overlayFade {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1;
+    visibility: visible; } }
+
+@keyframes overlayFade {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1;
+    visibility: visible; } }
+
+@-webkit-keyframes moveUp {
+  from {
+    -webkit-transform: translate3d(0, 20px, 0);
+            transform: translate3d(0, 20px, 0); }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); } }
+
+@keyframes moveUp {
+  from {
+    -webkit-transform: translate3d(0, 20px, 0);
+            transform: translate3d(0, 20px, 0); }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); } }
+
 @-webkit-keyframes hueRotate {
   from {
     -webkit-filter: hue-rotate(0deg);
@@ -161,36 +191,6 @@ aside {
   100% {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg); } }
-
-@-webkit-keyframes overlayFade {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1;
-    visibility: visible; } }
-
-@keyframes overlayFade {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1;
-    visibility: visible; } }
-
-@-webkit-keyframes moveUp {
-  from {
-    -webkit-transform: translate3d(0, 20px, 0);
-            transform: translate3d(0, 20px, 0); }
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0); } }
-
-@keyframes moveUp {
-  from {
-    -webkit-transform: translate3d(0, 20px, 0);
-            transform: translate3d(0, 20px, 0); }
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0); } }
 
 .projects__main {
   padding: 2rem;
@@ -255,6 +255,20 @@ header {
 
 header.scrolled {
   background-color: white; }
+
+.headroom {
+  will-change: transform;
+  transition: -webkit-transform 800ms linear;
+  transition: transform 800ms linear;
+  transition: transform 800ms linear, -webkit-transform 800ms linear; }
+
+.headroom--pinned {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%); }
+
+.headroom--unpinned {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%); }
 
 /* MAIN CONTENT
 ================================================== */

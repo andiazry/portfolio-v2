@@ -67,6 +67,17 @@ header.scrolled {
   background-color: white;
 }
 
+.headroom {
+  will-change: transform;
+  transition: transform 800ms linear;
+}
+.headroom--pinned {
+  transform: translateY(0%);
+}
+.headroom--unpinned {
+  transform: translateY(-100%);
+}
+
 /* MAIN CONTENT
 ================================================== */
 

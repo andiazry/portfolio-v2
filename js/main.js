@@ -6,8 +6,13 @@ $(document).ready(function() {
     .fadeIn(1000);
 
   $(window).scroll(function() {
-    $('header').toggleClass('scrolled', $(this).scrollTop() > 100);
+    $('header').toggleClass('scrolled', $(this).scrollTop() > 150);
   });
+
+  var myElement = document.querySelector('header');
+  var headroom = new Headroom(myElement);
+  headroom.init();
+  headroom.destroy();
 
   // About page overlay toggle
   $('.nav__main--overlay').click(function() {
