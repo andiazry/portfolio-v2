@@ -78,7 +78,10 @@ html {
 
 body {
   background: #faf9f7;
-  cursor: url("../img/cursor--arrow.png"), auto; }
+  cursor: url("../img/cursor--arrow.png"), auto;
+  display: none;
+  -webkit-animation: 0.5s moveUp;
+          animation: 0.5s moveUp; }
   body a:hover {
     cursor: url("../img/cursor--circle.png"), auto; }
 
@@ -172,6 +175,22 @@ aside {
   100% {
     opacity: 1;
     visibility: visible; } }
+
+@-webkit-keyframes moveUp {
+  from {
+    -webkit-transform: translate3d(0, 20px, 0);
+            transform: translate3d(0, 20px, 0); }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); } }
+
+@keyframes moveUp {
+  from {
+    -webkit-transform: translate3d(0, 20px, 0);
+            transform: translate3d(0, 20px, 0); }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); } }
 
 .projects__main {
   padding: 2rem;

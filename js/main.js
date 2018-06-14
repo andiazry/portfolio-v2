@@ -1,5 +1,10 @@
 $(document).ready(function() {
   // Navbar color change on scroll
+
+  $('body')
+    .delay(500)
+    .fadeIn(1000);
+
   $(window).scroll(function() {
     $('header').toggleClass('scrolled', $(this).scrollTop() > 100);
   });
