@@ -296,13 +296,15 @@ main {
       main .containerLeft__projects--list:hover a {
         opacity: 0.2; }
       main .containerLeft__projects ul li:hover a {
-        opacity: 1; }
+        opacity: 1;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #000; }
       main .containerLeft__projects ul {
         list-style: none; }
       main .containerLeft__projects ul a:link, main .containerLeft__projects ul a:visited {
         text-decoration: none;
-        color: #000;
-        transition: all 0.2s ease; }
+        color: #000; }
   main .containerRight {
     grid-area: right; }
     main .containerRight__photo {

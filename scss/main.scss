@@ -115,6 +115,9 @@ main {
 
       & ul li:hover a {
         opacity: 1;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: $color-black;
       }
 
       & ul {
@@ -126,7 +129,7 @@ main {
         &:visited {
           text-decoration: none;
           color: $color-black;
-          transition: all 0.2s ease;
+          // transition: all 0.1s ease;
         }
       }
     }
