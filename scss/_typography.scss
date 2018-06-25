@@ -25,11 +25,6 @@ body {
   color: $color-black;
 }
 
-.projects--body {
-  font-family: $typeface-medium, sans-serif;
-  font-size: 2rem;
-}
-
 p {
   font-size: 1.6rem;
 }
@@ -68,11 +63,27 @@ h4 {
   font-size: 2rem;
 }
 
-.containerLeft__projects--list a,
-.projects--title {
+.containerLeft__projects--list a {
   font-family: $typeface-bold, sans-serif;
   font-size: 11rem;
   line-height: 1.1;
+}
+
+.projects--title {
+  font-family: $typeface-bold, sans-serif;
+  font-size: 15rem;
+  line-height: 1.1;
+}
+
+.projects--body {
+  font-family: $typeface-regular, sans-serif;
+  font-size: 3rem;
+}
+
+.projects__info--label {
+  font-family: $typeface-bold, sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: $padding-m;
 }
 
 aside h1 {

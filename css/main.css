@@ -18,10 +18,6 @@ body {
   font-family: "HKGrotesk-Regular", sans-serif, sans-serif;
   color: #000; }
 
-.projects--body {
-  font-family: "HKGrotesk-Medium", sans-serif, sans-serif;
-  font-size: 2rem; }
-
 p {
   font-size: 1.6rem; }
 
@@ -52,11 +48,24 @@ h4 {
   font-family: "HKGrotesk-Bold", sans-serif, sans-serif;
   font-size: 2rem; }
 
-.containerLeft__projects--list a,
-.projects--title {
+.containerLeft__projects--list a {
   font-family: "HKGrotesk-Bold", sans-serif, sans-serif;
   font-size: 11rem;
   line-height: 1.1; }
+
+.projects--title {
+  font-family: "HKGrotesk-Bold", sans-serif, sans-serif;
+  font-size: 15rem;
+  line-height: 1.1; }
+
+.projects--body {
+  font-family: "HKGrotesk-Regular", sans-serif, sans-serif;
+  font-size: 3rem; }
+
+.projects__info--label {
+  font-family: "HKGrotesk-Bold", sans-serif, sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 2rem; }
 
 aside h1 {
   color: #fff;

@@ -25,16 +25,9 @@
   var features = {
     bind: !!function() {}.bind,
     classList: 'classList' in document.documentElement,
-    rAF: !!(
-      window.requestAnimationFrame ||
-      window.webkitRequestAnimationFrame ||
-      window.mozRequestAnimationFrame
-    )
+    rAF: !!(window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame)
   };
-  window.requestAnimationFrame =
-    window.requestAnimationFrame ||
-    window.webkitRequestAnimationFrame ||
-    window.mozRequestAnimationFrame;
+  window.requestAnimationFrame = window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame;
 
   /**
    * Handles debouncing of events via requestAnimationFrame
@@ -116,7 +109,7 @@
    * Helper function for normalizing tolerance option to object format
    */
   function normalizeTolerance(t) {
-    return t === Object(t) ? t : {down: t, up: t};
+    return t === Object(t) ? t : { down: t, up: t };
   }
 
   /**
@@ -296,9 +289,7 @@
      * @return {int} the height of the viewport in pixels
      */
     getViewportHeight: function() {
-      return (
-        window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight
-      );
+      return window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
     },
 
     /**
@@ -315,9 +306,7 @@
      * @return {int} the physical height of the scroller element in pixels
      */
     getScrollerPhysicalHeight: function() {
-      return this.scroller === window || this.scroller === document.body
-        ? this.getViewportHeight()
-        : this.getElementPhysicalHeight(this.scroller);
+      return this.scroller === window || this.scroller === document.body ? this.getViewportHeight() : this.getElementPhysicalHeight(this.scroller);
     },
 
     /**
@@ -353,9 +342,7 @@
      * @return {int} the height of the scroller element in pixels
      */
     getScrollerHeight: function() {
-      return this.scroller === window || this.scroller === document.body
-        ? this.getDocumentHeight()
-        : this.getElementHeight(this.scroller);
+      return this.scroller === window || this.scroller === document.body ? this.getDocumentHeight() : this.getElementHeight(this.scroller);
     },
 
     /**
@@ -445,7 +432,7 @@
    */
   Headroom.options = {
     tolerance: {
-      up: 5,
+      up: 35,
       down: 5
     },
     offset: 80,
@@ -460,8 +447,7 @@
       initial: 'headroom'
     }
   };
-  Headroom.cutsTheMustard =
-    typeof features !== 'undefined' && features.rAF && features.bind && features.classList;
+  Headroom.cutsTheMustard = typeof features !== 'undefined' && features.rAF && features.bind && features.classList;
 
   return Headroom;
 });
