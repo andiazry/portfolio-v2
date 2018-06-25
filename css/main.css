@@ -205,6 +205,15 @@ aside {
   border-top: 1px solid #000;
   border-bottom: 1px solid #000; }
 
+.projects__case {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem; }
+  .projects__case--images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem; }
+
 .projects__case img {
   width: 100%; }
 

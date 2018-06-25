@@ -15,6 +15,18 @@
   border-bottom: 1px solid $color-black;
 }
 
+.projects__case {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: $padding-m;
+
+  &--images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: $padding-m;
+  }
+}
+
 .projects__case img {
   width: 100%;
 }
