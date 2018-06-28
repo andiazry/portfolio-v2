@@ -21,7 +21,7 @@
 }
 
 body {
-  font-family: $typeface-regular, sans-serif;
+  font-family: 'Work Sans', sans-serif;
   color: $color-black;
 }
 
@@ -29,44 +29,35 @@ p {
   font-size: 1.6rem;
 }
 
-a {
-  font-family: $typeface-medium, sans-serif;
+a.text__overlay {
   font-size: 1.6rem;
-}
-
-.nav__main--active {
-  text-decoration: line-through;
 }
 
 .nav__main a {
   font-size: 3rem;
 }
 
-h1 {
-  font-family: $typeface-bold, sans-serif;
+h1.text__name {
+  font-weight: 600;
   font-size: 3rem;
 }
 
-h2 {
-  font-family: $typeface-light, sans-serif;
+h2.text__role {
+  font-weight: 400;
   font-size: 2rem;
 }
 
-h3 {
-  font-family: $typeface-bold, sans-serif;
+h3.text__header {
+  font-weight: 600;
   font-size: 2rem;
   padding-bottom: $padding-m;
 }
 
-h4 {
-  font-family: $typeface-bold, sans-serif;
-  font-size: 2rem;
-}
-
-.containerLeft__projects--list a {
-  font-family: $typeface-bold, sans-serif;
+a.text__projects {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
   font-size: 11rem;
-  line-height: 1.1;
+  line-height: 1.05;
 }
 
 .projects--title {
@@ -75,9 +66,10 @@ h4 {
   line-height: 1.1;
 }
 
-.projects--body {
-  font-family: $typeface-regular, sans-serif;
-  font-size: 3rem;
+.text__projects--body {
+  font-size: 3.5rem;
+  font-weight: 00;
+  line-height: 1.2;
 }
 
 .projects__info--label {
