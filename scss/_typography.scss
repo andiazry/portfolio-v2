@@ -1,40 +1,42 @@
 @import 'variables';
 
-@font-face {
-  font-family: 'HKGrotesk-Light';
-  src: url('/assets/fonts/HKGrotesk-Light.woff') format('woff');
-}
+// @font-face {
+//   font-family: 'HKGrotesk-Light';
+//   src: url('/assets/fonts/HKGrotesk-Light.woff') format('woff');
+// }
 
-@font-face {
-  font-family: 'HKGrotesk-Regular';
-  src: url('/assets/fonts/HKGrotesk-Regular.woff') format('woff');
-}
+// @font-face {
+//   font-family: 'HKGrotesk-Regular';
+//   src: url('/assets/fonts/HKGrotesk-Regular.woff') format('woff');
+// }
 
-@font-face {
-  font-family: 'HKGrotesk-Medium';
-  src: url('/assets/fonts/HKGrotesk-Medium.woff') format('woff');
-}
+// @font-face {
+//   font-family: 'HKGrotesk-Medium';
+//   src: url('/assets/fonts/HKGrotesk-Medium.woff') format('woff');
+// }
 
-@font-face {
-  font-family: 'HKGrotesk-Bold';
-  src: url('/assets/fonts/HKGrotesk-Bold.woff') format('woff');
-}
+// @font-face {
+//   font-family: 'HKGrotesk-Bold';
+//   src: url('/assets/fonts/HKGrotesk-Bold.woff') format('woff');
+// }
 
 body {
   font-family: 'Work Sans', sans-serif;
   color: $color-black;
-}
-
-p {
   font-size: 1.6rem;
 }
 
-a.text__overlay {
-  font-size: 1.6rem;
-}
-
-.nav__main a {
+a.link__about {
   font-size: 3rem;
+  text-decoration: none;
+
+  &:visited {
+    color: $color-black;
+  }
+
+  &:hover {
+    text-decoration: line-through;
+  }
 }
 
 h1.text__name {
@@ -57,33 +59,40 @@ a.text__projects {
   font-family: 'Work Sans', sans-serif;
   font-weight: 600;
   font-size: 11rem;
-  line-height: 1.05;
-}
-
-.projects--title {
-  font-family: $typeface-bold, sans-serif;
-  font-size: 15rem;
   line-height: 1.1;
 }
 
-.text__projects--body {
-  font-size: 3.5rem;
-  font-weight: 00;
-  line-height: 1.2;
+.text__projects--title {
+  font-size: 15rem;
 }
 
-.projects__info--label {
-  font-family: $typeface-bold, sans-serif;
-  font-size: 1.8rem;
-  margin-bottom: $padding-m;
+.text__projects--body,
+aside .text__bio {
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
-aside h1 {
-  color: $color-white;
-  font-size: 2.8rem;
+aside .text__bio {
+  line-height: 1.4;
 }
 
-aside .bio__body {
-  color: $color-white;
-  font-size: 3.2rem;
+footer p,
+footer .link__social {
+  line-height: 1.5;
+  color: $color-black;
+}
+
+footer .link__social {
+  display: block;
+  text-decoration: none;
+  font-family: 'Work Sans', sans-serif;
+
+  &:visited {
+    color: $color-black;
+  }
+
+  &:hover {
+    text-decoration: line-through;
+  }
 }

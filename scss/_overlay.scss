@@ -7,7 +7,7 @@ aside {
   top: 0;
   left: 0;
   background: $color-black;
-  padding: $padding-xl;
+  padding: $padding-l;
   color: $color-white;
   transition: all 0.2s ease;
   z-index: 100;
@@ -34,7 +34,7 @@ aside {
     position: absolute;
     top: 0;
     right: 0;
-    padding: $padding-xl;
+    padding: $padding-l;
 
     & img {
       width: 4rem;

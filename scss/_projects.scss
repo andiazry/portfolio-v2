@@ -7,12 +7,15 @@
 }
 
 .projects__info {
-  margin: 20rem 0 $margin-xl;
-  padding: $padding-xl 0;
+  margin-bottom: $margin-m;
+  padding: 6rem $padding-xl;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  border-top: 1px solid $color-black;
-  border-bottom: 1px solid $color-black;
+  border-bottom: 1px dashed $color-black;
+
+  // &--title {
+  //   align-self: center;
+  //   justify-self: center;
+  // }
 }
 
 .projects__case {

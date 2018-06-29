@@ -1,31 +1,15 @@
-@font-face {
-  font-family: 'HKGrotesk-Light';
-  src: url("/assets/fonts/HKGrotesk-Light.woff") format("woff"); }
-
-@font-face {
-  font-family: 'HKGrotesk-Regular';
-  src: url("/assets/fonts/HKGrotesk-Regular.woff") format("woff"); }
-
-@font-face {
-  font-family: 'HKGrotesk-Medium';
-  src: url("/assets/fonts/HKGrotesk-Medium.woff") format("woff"); }
-
-@font-face {
-  font-family: 'HKGrotesk-Bold';
-  src: url("/assets/fonts/HKGrotesk-Bold.woff") format("woff"); }
-
 body {
   font-family: 'Work Sans', sans-serif;
-  color: #000; }
-
-p {
+  color: #000;
   font-size: 1.6rem; }
 
-a.text__overlay {
-  font-size: 1.6rem; }
-
-.nav__main a {
-  font-size: 3rem; }
+a.link__about {
+  font-size: 3rem;
+  text-decoration: none; }
+  a.link__about:visited {
+    color: #000; }
+  a.link__about:hover {
+    text-decoration: line-through; }
 
 h1.text__name {
   font-weight: 600;
@@ -44,30 +28,33 @@ a.text__projects {
   font-family: 'Work Sans', sans-serif;
   font-weight: 600;
   font-size: 11rem;
-  line-height: 1.05; }
-
-.projects--title {
-  font-family: "HKGrotesk-Bold", sans-serif, sans-serif;
-  font-size: 15rem;
   line-height: 1.1; }
 
-.text__projects--body {
-  font-size: 3.5rem;
-  font-weight: 00;
-  line-height: 1.2; }
+.text__projects--title {
+  font-size: 15rem; }
 
-.projects__info--label {
-  font-family: "HKGrotesk-Bold", sans-serif, sans-serif;
-  font-size: 1.8rem;
-  margin-bottom: 2rem; }
+.text__projects--body,
+aside .text__bio {
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1.5; }
 
-aside h1 {
-  color: #fff;
-  font-size: 2.8rem; }
+aside .text__bio {
+  line-height: 1.4; }
 
-aside .bio__body {
-  color: #fff;
-  font-size: 3.2rem; }
+footer p,
+footer .link__social {
+  line-height: 1.5;
+  color: #000; }
+
+footer .link__social {
+  display: block;
+  text-decoration: none;
+  font-family: 'Work Sans', sans-serif; }
+  footer .link__social:visited {
+    color: #000; }
+  footer .link__social:hover {
+    text-decoration: line-through; }
 
 *,
 *::after,
@@ -95,7 +82,7 @@ aside {
   top: 0;
   left: 0;
   background: #000;
-  padding: 4rem;
+  padding: 3rem;
   color: #fff;
   transition: all 0.2s ease;
   z-index: 100;
@@ -115,7 +102,7 @@ aside {
     position: absolute;
     top: 0;
     right: 0;
-    padding: 4rem; }
+    padding: 3rem; }
     aside .nav__main--overlay img {
       width: 4rem; }
 
@@ -201,12 +188,10 @@ aside {
   width: 100%; }
 
 .projects__info {
-  margin: 20rem 0 4rem;
-  padding: 4rem 0;
+  margin-bottom: 2rem;
+  padding: 6rem 8rem;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  border-top: 1px solid #000;
-  border-bottom: 1px solid #000; }
+  border-bottom: 1px dashed #000; }
 
 .projects__case {
   display: grid;
@@ -260,10 +245,6 @@ header {
     padding-right: 3rem; }
   header .nav__main {
     display: inline-block; }
-    header .nav__main a:link, header .nav__main a:visited {
-      text-decoration: none;
-      color: #000;
-      transition: all 0.2s ease; }
 
 header.scrolled {
   background-color: white; }
@@ -273,14 +254,12 @@ header.scrolled {
   transition: -webkit-transform 800ms linear;
   transition: transform 800ms linear;
   transition: transform 800ms linear, -webkit-transform 800ms linear; }
-
-.headroom--pinned {
-  -webkit-transform: translateY(0%);
-          transform: translateY(0%); }
-
-.headroom--unpinned {
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%); }
+  .headroom--pinned {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%); }
+  .headroom--unpinned {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%); }
 
 /* MAIN CONTENT
 ================================================== */
@@ -361,7 +340,3 @@ footer {
   border-top: 1px dashed #000;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr; }
-  footer h4 {
-    padding-bottom: 2rem; }
-  footer p {
-    line-height: 1.5; }

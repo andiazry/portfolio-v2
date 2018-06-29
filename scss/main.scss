@@ -51,15 +51,6 @@ header {
 
   & .nav__main {
     display: inline-block;
-
-    & a {
-      &:link,
-      &:visited {
-        text-decoration: none;
-        color: $color-black;
-        transition: all 0.2s ease;
-      }
-    }
   }
 }
 
@@ -70,12 +61,14 @@ header.scrolled {
 .headroom {
   will-change: transform;
   transition: transform 800ms linear;
-}
-.headroom--pinned {
-  transform: translateY(0%);
-}
-.headroom--unpinned {
-  transform: translateY(-100%);
+
+  &--pinned {
+    transform: translateY(0%);
+  }
+
+  &--unpinned {
+    transform: translateY(-100%);
+  }
 }
 
 /* MAIN CONTENT
@@ -191,12 +184,4 @@ footer {
   border-top: 1px dashed $color-black;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-
-  & h4 {
-    padding-bottom: $padding-m;
-  }
-
-  & p {
-    line-height: 1.5;
-  }
 }
