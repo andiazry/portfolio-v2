@@ -27,8 +27,8 @@ h3.text__header {
 a.text__projects {
   font-family: 'Work Sans', sans-serif;
   font-weight: 600;
-  font-size: 11rem;
-  line-height: 1.1; }
+  font-size: 12rem;
+  line-height: 1.02; }
 
 .text__projects--title {
   font-size: 15rem; }
@@ -55,6 +55,9 @@ footer .link__social {
     color: #000; }
   footer .link__social:hover {
     text-decoration: line-through; }
+
+.underline {
+  text-decoration: underline; }
 
 *,
 *::after,
