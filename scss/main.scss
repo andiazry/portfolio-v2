@@ -177,11 +177,12 @@ main {
 
 footer {
   width: 100vw;
-  height: 32rem;
+  height: 30rem;
   // background: $color-bg-secondary;
   color: $color-black;
-  padding: 15rem $padding-m;
+  padding: 18rem $padding-m;
   border-top: 1px dashed $color-black;
+  border-bottom: 1.5rem solid #2e6b96;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
