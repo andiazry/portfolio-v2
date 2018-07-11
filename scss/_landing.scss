@@ -1,0 +1,39 @@
+@import 'variables';
+
+.landing__body {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  color: $color-white;
+  display: block;
+  cursor: url('../img/cursor--white.png'), auto;
+}
+
+.landing__content {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  padding: $padding-l;
+  background: $color-black;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: $padding-m;
+}
+
+.landing__content--bio p {
+  font-size: 4rem;
+  line-height: 1.2;
+}
+
+.landing__content--img {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+
+  & img {
+    position: absolute;
+    right: -200px;
+    top: 200px;
+    width: 50%;
+  }
+}
