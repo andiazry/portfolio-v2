@@ -231,10 +231,11 @@ aside {
   height: 100vh;
   position: relative;
   overflow: hidden;
-  padding: 18rem 3rem; }
+  padding: 14rem 3rem; }
   .landing__content p {
-    font-size: 4rem;
-    line-height: 1.2; }
+    font-size: 3.5rem;
+    line-height: 1.4;
+    padding-bottom: 3rem; }
 
 #logo {
   width: 6rem;
@@ -263,17 +264,48 @@ aside {
 
 .hoverText {
   position: relative;
-  color: #FAC12D; }
+  color: #fac12d; }
 
-.hoverText--img img {
+.hoverText:hover {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fac12d; }
+
+.hoverText--profile img,
+.hoverText--arena img,
+.hoverText--bundl {
   display: none; }
 
-.hoverText--img:hover img {
+.hoverText--profile:hover img {
   position: absolute;
   display: block;
-  left: calc(20% - 10px);
+  top: 100%;
+  left: 0%;
   z-index: 10;
   width: 450px; }
+
+.hoverText--arena:hover img {
+  position: absolute;
+  display: block;
+  top: 100%;
+  left: 0%;
+  z-index: 10;
+  width: 450px; }
+
+.hoverText--bundl:hover img {
+  position: absolute;
+  display: block;
+  top: 100%;
+  left: 0%;
+  z-index: 10;
+  width: 450px; }
+
+.underline {
+  text-decoration: none;
+  background: linear-gradient(180deg, transparent 70%, #f44930 0) 50%/0 75% no-repeat;
+  background-size: 0px 75%;
+  background-size: 100% 100%;
+  display: inline; }
 
 /* HEADER
 ================================================== */
