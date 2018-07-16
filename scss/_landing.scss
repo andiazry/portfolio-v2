@@ -1,9 +1,16 @@
 @import 'variables';
 
+.landing__header {
+  width: 100%;
+  padding: $padding-l;
+}
+
 .landing__body {
   width: 100%;
   height: 100vh;
   position: relative;
+  // padding-top: 12rem;
+  background: $color-black;
   color: $color-white;
   display: block;
   cursor: url('../img/cursor--white.png'), auto;
@@ -13,27 +20,60 @@
   height: 100vh;
   position: relative;
   overflow: hidden;
-  padding: $padding-l;
-  background: $color-black;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: $padding-m;
-}
+  padding: 18rem $padding-l;
 
-.landing__content--bio p {
-  font-size: 4rem;
-  line-height: 1.2;
-}
-
-.landing__content--img {
-  display: grid;
-  justify-items: center;
-  align-items: center;
-
-  & img {
-    position: absolute;
-    right: -200px;
-    top: 200px;
-    width: 50%;
+  & p {
+    font-size: 4rem;
+    line-height: 1.2;
   }
 }
+
+#logo {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 5rem;
+  display: inline-block;
+  background: $color-bg-accent;
+}
+
+.landing__footer {
+  position: fixed;
+  display: block;
+  left: 0;
+  bottom: 0;
+  padding: 5rem $padding-l;
+  margin: 0;
+  height: 50px;
+
+  & a {
+    color: white;
+  }
+}
+
+.landing__social {
+  text-decoration: none;
+  display: inline-block;
+  padding-right: $padding-l;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.hoverText {
+  position: relative;
+  color: #FAC12D;
+}
+
+.hoverText--img img {
+  display:none;
+}
+
+.hoverText--img:hover img{
+  position: absolute;
+  display: block;
+  left: calc(20% - 10px);
+  z-index: 10;
+  width: 450px;
+}
+
