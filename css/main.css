@@ -287,16 +287,16 @@ aside {
 .hoverText--arena:hover img {
   position: absolute;
   display: block;
-  top: 100%;
-  left: 0%;
+  top: -200%;
+  left: 110%;
   z-index: 10;
-  width: 450px; }
+  width: 500px; }
 
 .hoverText--bundl:hover img {
   position: absolute;
   display: block;
   top: 100%;
-  left: 0%;
+  right: -100%;
   z-index: 10;
   width: 450px; }
 
