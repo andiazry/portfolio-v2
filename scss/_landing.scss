@@ -23,8 +23,8 @@
   padding: 14rem $padding-l;
 
   & p {
-    font-size: 3.5rem;
-    line-height: 1.4;
+    font-size: 3.6rem;
+    line-height: 1.5;
     padding-bottom: $padding-l;
   }
 
@@ -50,9 +50,10 @@
   grid-template-columns: 1fr 1fr;
   left: 0;
   bottom: 0;
-  padding: 5rem $padding-l;
+  padding: $padding-l;
   margin: 0;
   height: 50px;
+  border: none;
 
   & a {
     color: white;
@@ -66,6 +67,10 @@
 
   &:hover {
     text-decoration: underline;
+  }
+
+  &:last-child {
+    padding-right: 0;
   }
 }
 
@@ -90,7 +95,7 @@
 
 .hoverText--profile img,
 .hoverText--arena img,
-.hoverText--bundl {
+.hoverText--bundl img {
   display: none;
 }
 
@@ -106,8 +111,8 @@
 .hoverText--arena:hover img {
   position: absolute;
   display: block;
-  top: -200%;
-  left: 110%;
+  bottom: 100%;
+  left: 0;
   z-index: 10;
   width: 500px;
 }
@@ -115,8 +120,8 @@
 .hoverText--bundl:hover img {
   position: absolute;
   display: block;
-  top: 100%;
-  right: -100%;
+  bottom: 100%;
+  right: 0;
   z-index: 10;
   width: 450px;
 }
@@ -131,18 +136,18 @@
 
 // MEDIA QUERIES
 
-@media (max-width: 800px) {
+@media (max-width: 840px) {
   .landing__content p {
     font-size: 2.8rem;
-    line-height: 1.4;
+    line-height: 1.5;
     padding-bottom: $padding-l;
   }
 }
 
 @media (max-width: 680px) {
   .landing__content p {
-    font-size: 2rem;
-    line-height: 1.4;
+    font-size: 2.8rem;
+    line-height: 1.5;
     padding-bottom: $padding-m;
   }
   .landing__footer {
@@ -154,5 +159,12 @@
     height: 100px;
     grid-template-columns: 1fr;
     padding: $padding-m;
+  }
+}
+
+@media (max-width: 580px) {
+  .landing__content p {
+    font-size: 2.1rem;
+    line-height: 1.6;
   }
 }
