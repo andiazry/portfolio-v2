@@ -27,6 +27,13 @@
     line-height: 1.4;
     padding-bottom: $padding-l;
   }
+
+  & a {
+    color: $color-white;
+    &:visited {
+      color: $color-white;
+    }
+  }
 }
 
 #logo {
@@ -39,7 +46,8 @@
 
 .landing__footer {
   position: fixed;
-  display: block;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   left: 0;
   bottom: 0;
   padding: 5rem $padding-l;
@@ -59,6 +67,14 @@
   &:hover {
     text-decoration: underline;
   }
+}
+
+.landing__contact {
+  justify-items: center;
+}
+
+.landing__contact p {
+  color: $color-white;
 }
 
 .hoverText {
@@ -111,4 +127,32 @@
   background-size: 0px 75%;
   background-size: 100% 100%;
   display: inline;
+}
+
+// MEDIA QUERIES
+
+@media (max-width: 800px) {
+  .landing__content p {
+    font-size: 2.8rem;
+    line-height: 1.4;
+    padding-bottom: $padding-l;
+  }
+}
+
+@media (max-width: 680px) {
+  .landing__content p {
+    font-size: 2rem;
+    line-height: 1.4;
+    padding-bottom: $padding-m;
+  }
+  .landing__footer {
+    display: grid;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    justify-content: center;
+    height: 100px;
+    grid-template-columns: 1fr;
+    padding: $padding-m;
+  }
 }

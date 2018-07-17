@@ -236,6 +236,10 @@ aside {
     font-size: 3.5rem;
     line-height: 1.4;
     padding-bottom: 3rem; }
+  .landing__content a {
+    color: #fff; }
+    .landing__content a:visited {
+      color: #fff; }
 
 #logo {
   width: 6rem;
@@ -246,7 +250,8 @@ aside {
 
 .landing__footer {
   position: fixed;
-  display: block;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   left: 0;
   bottom: 0;
   padding: 5rem 3rem;
@@ -261,6 +266,12 @@ aside {
   padding-right: 3rem; }
   .landing__social:hover {
     text-decoration: underline; }
+
+.landing__contact {
+  justify-items: center; }
+
+.landing__contact p {
+  color: #fff; }
 
 .hoverText {
   position: relative;
@@ -306,6 +317,27 @@ aside {
   background-size: 0px 75%;
   background-size: 100% 100%;
   display: inline; }
+
+@media (max-width: 800px) {
+  .landing__content p {
+    font-size: 2.8rem;
+    line-height: 1.4;
+    padding-bottom: 3rem; } }
+
+@media (max-width: 680px) {
+  .landing__content p {
+    font-size: 2rem;
+    line-height: 1.4;
+    padding-bottom: 2rem; }
+  .landing__footer {
+    display: grid;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    justify-content: center;
+    height: 100px;
+    grid-template-columns: 1fr;
+    padding: 2rem; } }
 
 /* HEADER
 ================================================== */
