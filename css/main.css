@@ -347,6 +347,12 @@ aside {
     font-size: 2.1rem;
     line-height: 1.6; } }
 
+@media (min-width: 1680px) {
+  .landing__content p {
+    font-size: 5rem;
+    line-height: 1.6;
+    padding-bottom: 3rem; } }
+
 /* HEADER
 ================================================== */
 header {
