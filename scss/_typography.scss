@@ -58,12 +58,19 @@ h3.text__header {
 a.text__projects {
   font-family: 'Work Sans', sans-serif;
   font-weight: 600;
-  font-size: 12rem;
-  line-height: 1.02;
+  font-size: 11rem;
+  line-height: 1;
 }
 
 .text__projects--title {
   font-size: 15rem;
+}
+
+.text__projects--subtitle {
+  color: $color-black-lighten;
+  font-size: 1.3rem;
+  padding-bottom: $padding-m;
+  padding-left: $padding-s;
 }
 
 .text__projects--body,
