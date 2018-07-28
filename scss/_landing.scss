@@ -163,8 +163,25 @@
 }
 
 @media (max-width: 580px) {
+  .landing__content {
+    overflow: auto;
+    padding-bottom: $padding-l;
+  }
+
   .landing__content p {
     font-size: 2.1rem;
     line-height: 1.6;
+  }
+
+  .landing__footer {
+    position: relative;
+  }
+}
+
+@media (min-width: 1680px) {
+  .landing__content p {
+    font-size: 5rem;
+    line-height: 1.6;
+    padding-bottom: $padding-l;
   }
 }
