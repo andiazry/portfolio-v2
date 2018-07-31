@@ -195,10 +195,10 @@ aside {
   font-size: 10rem; }
 
 .projects__intro--subtitle {
+  font-family: 'Asul', sans-serif;
   font-size: 4rem;
   font-weight: 600;
-  opacity: 0.3;
-  font-style: italic; }
+  opacity: 0.25; }
 
 .projects__intro--summary {
   font-size: 2.6rem;
@@ -238,11 +238,19 @@ aside {
   line-height: 1.7;
   margin-bottom: 3rem; }
 
-.projects__hero {
+.projects__hero,
+.projects__hero02 {
   height: 100vh;
-  background-image: url("../img/bundl/bundl-hero.png");
   background-size: contain;
-  background-position: center; }
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ecb8ab; }
+
+.projects__hero {
+  background-image: url("../img/greatwolf/greatwolf-hero.png"); }
+
+.projects__hero02 {
+  background-image: url("../img/greatwolf/greatwolf-hero-02.png"); }
 
 .projects__container {
   width: 100%;
@@ -255,14 +263,30 @@ aside {
     padding: 1rem 0;
     margin-bottom: 4rem; }
 
-.projects__container--image {
+.projects__container--image,
+.projects__container--image01,
+.projects__container--image02,
+.projects__container--image03,
+.projects__container--image04 {
   height: 100vh;
-  background-image: url("../img/bundl/bundl-hero.png");
   background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
   position: sticky;
   position: -webkit-sticky;
   top: 0; }
+
+.projects__container--image01 {
+  background-image: url("../img/greatwolf/greatwolf-research.png"); }
+
+.projects__container--image02 {
+  background-image: url("../img/greatwolf/greatwolf-wires.png"); }
+
+.projects__container--image03 {
+  background-image: url("../img/greatwolf/greatwolf-map.png"); }
+
+.projects__container--image04 {
+  background-image: url("../img/greatwolf/greatwolf-iteration.png"); }
 
 .projects p {
   font-weight: 400;
