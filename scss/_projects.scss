@@ -60,7 +60,9 @@
 }
 
 .projects__hero,
-.projects__hero02 {
+.projects__hero02,
+.projects__hero--hub,
+.projects__hero--hub02 {
   height: 100vh;
   background-size: contain;
   background-repeat: no-repeat;
@@ -76,6 +78,16 @@
   background-image: url('../img/greatwolf/greatwolf-hero-02.png');
 }
 
+.projects__hero--hub {
+  background-color: #efdbab;
+  background-image: url('../img/hub/hub-hero.png');
+}
+
+.projects__hero--hub02 {
+  background-color: #efdbab;
+  background-image: url('../img/hub/hub-hero-02.png');
+}
+
 .projects__container {
   width: 100%;
   display: grid;
@@ -89,14 +101,21 @@
     border-bottom: 1px dashed $color-black;
     padding: $margin-s 0;
     margin-bottom: $margin-xl;
+    line-height: 1.4;
   }
 }
 
 .projects__container--image,
-.projects__container--image01,
-.projects__container--image02,
-.projects__container--image03,
-.projects__container--image04 {
+.projects__container--gw01,
+.projects__container--gw02,
+.projects__container--gw03,
+.projects__container--gw04,
+.projects__container--hub01,
+.projects__container--hub02,
+.projects__container--hub03,
+.projects__container--hub04,
+.projects__container--hub05,
+.projects__container--hub06 {
   height: 100vh;
   background-size: contain;
   background-repeat: no-repeat;
@@ -106,20 +125,44 @@
   top: 0;
 }
 
-.projects__container--image01 {
+.projects__container--gw01 {
   background-image: url('../img/greatwolf/greatwolf-research.png');
 }
 
-.projects__container--image02 {
+.projects__container--gw02 {
   background-image: url('../img/greatwolf/greatwolf-wires.png');
 }
 
-.projects__container--image03 {
+.projects__container--gw03 {
   background-image: url('../img/greatwolf/greatwolf-map.png');
 }
 
-.projects__container--image04 {
+.projects__container--gw04 {
   background-image: url('../img/greatwolf/greatwolf-iteration.png');
+}
+
+.projects__container--hub01 {
+  background-image: url('../img/hub/hub-current.png');
+}
+
+.projects__container--hub02 {
+  background-image: url('../img/hub/hub-timeline.png');
+}
+
+.projects__container--hub03 {
+  background-image: url('../img/hub/hub-workflow.png');
+}
+
+.projects__container--hub04 {
+  background-image: url('../img/hub/hub-load.png');
+}
+
+.projects__container--hub05 {
+  background-image: url('../img/hub/hub-lane.png');
+}
+
+.projects__container--hub06 {
+  background-image: url('../img/hub/hub-exception.png');
 }
 
 .projects p {
@@ -127,7 +170,7 @@
   color: #333;
   font-size: 2.1rem;
   line-height: 1.8;
-  margin-bottom: $margin-m;
+  margin-bottom: $margin-l;
 }
 
 .projects ul {

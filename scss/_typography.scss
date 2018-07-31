@@ -29,6 +29,7 @@ body {
 a.link__about {
   font-size: 3rem;
   text-decoration: none;
+  color: $color-black;
 
   &:visited {
     color: $color-black;
@@ -36,6 +37,10 @@ a.link__about {
 
   &:hover {
     text-decoration: underline;
+  }
+
+  &:active {
+    color: $color-black;
   }
 }
 
