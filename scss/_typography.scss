@@ -35,7 +35,7 @@ a.link__about {
   }
 
   &:hover {
-    text-decoration: line-through;
+    text-decoration: underline;
   }
 }
 
@@ -57,7 +57,7 @@ h3.text__header {
 
 a.text__projects {
   font-family: 'Work Sans', sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 12rem;
   line-height: 0.9;
 }
@@ -68,7 +68,7 @@ a.text__projects {
 
 .text__projects--subtitle {
   color: $color-black-lighten;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   padding-bottom: $padding-m;
   padding-left: $padding-s;
 }
@@ -100,7 +100,7 @@ footer .link__social {
   }
 
   &:hover {
-    text-decoration: line-through;
+    text-decoration: underline;
   }
 }
 
