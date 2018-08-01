@@ -1,0 +1,155 @@
+/* MEDIA QUERIES
+================================================== */
+
+@media (min-width: 1600px) {
+  // Home
+  a.text__projects {
+    font-size: 14rem;
+  }
+
+  .text__projects--subtitle {
+    font-size: 2rem;
+  }
+
+  // Case studies
+  .projects {
+    & h1 {
+      font-size: 15rem;
+    }
+  }
+
+  .projects__intro--summary,
+  .projects__outro--summary {
+    font-size: 3rem;
+    line-height: 1.8;
+  }
+}
+
+@media (max-width: 1250px) {
+  // Home
+  a.text__projects {
+    font-size: 8rem;
+  }
+
+  .text__projects--subtitle {
+    padding-left: 0;
+  }
+
+  footer p,
+  footer a {
+    font-size: 1.3rem;
+  }
+
+  // // Case studies
+}
+
+@media (max-width: 940px) {
+  // Home
+  a.text__projects {
+    font-size: 6rem;
+  }
+
+  .text__projects--subtitle {
+    font-size: 1.3rem;
+    padding-left: 0;
+    padding-top: 5px;
+  }
+
+  .projects {
+    & h1 {
+      font-size: 8rem;
+    }
+
+    &__intro--subtitle {
+      font-size: 3rem;
+    }
+  }
+
+  footer p,
+  footer a {
+    font-size: 1rem;
+  }
+  // // Case studies
+  .projects__intro,
+  .projects__outro {
+    padding: 8rem 10rem;
+  }
+
+  .projects__intro--summary,
+  .projects__outro--summary {
+    font-size: 2rem;
+    line-height: 1.8;
+  }
+
+  .projects__container--text {
+    padding: $padding-l;
+  }
+
+  .projects__container--subtitle {
+    font-size: 1.8rem;
+  }
+
+  .item--highlight {
+    font-size: 1.6rem;
+  }
+
+  .projects__container--text p {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 720px) {
+  // Home
+  main {
+    grid-template-columns: 1fr;
+
+    & .containerLeft {
+      border-right: none;
+      padding-right: 0;
+      grid-template-rows: 1fr 2fr;
+
+      &__bio {
+        padding-left: 0;
+        padding-top: 8rem;
+      }
+    }
+  }
+
+  .containerRight {
+    display: none;
+  }
+
+  h1.text__name {
+    font-weight: 600;
+    font-size: 3rem;
+  }
+
+  h2.text__role {
+    font-weight: 400;
+    font-size: 2rem;
+  }
+
+  .link__about {
+    font-size: 2rem !important;
+  }
+
+  footer {
+    padding: 4rem 2rem;
+    border-top: 1px dashed $color-black;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .footer__social,
+  .footer__contact {
+    margin-bottom: 20px;
+  }
+
+  footer .text__header {
+    padding-bottom: 5px;
+  }
+
+  .link__social {
+    padding-bottom: 5px;
+  }
+}

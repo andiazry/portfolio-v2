@@ -18,7 +18,7 @@ gulp.task('sass', function() {
     .pipe(sass())
     .pipe(autoprefixer())
     .pipe(gulp.dest('css'))
-    .pipe(bs.reload({stream: true}));
+    .pipe(bs.reload({ stream: true }));
 });
 
 gulp.task('watch', ['browser-sync'], function() {
