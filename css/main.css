@@ -243,7 +243,9 @@ aside {
 .projects__hero,
 .projects__hero02,
 .projects__hero--hub,
-.projects__hero--hub02 {
+.projects__hero--hub02,
+.projects__hero--bundl,
+.projects__hero--bundl02 {
   height: 100vh;
   background-size: contain;
   background-repeat: no-repeat;
@@ -263,6 +265,14 @@ aside {
 .projects__hero--hub02 {
   background-color: #efdbab;
   background-image: url("../img/hub/hub-hero-02.png"); }
+
+.projects__hero--bundl {
+  background-color: #fed369;
+  background-image: url("../img/bundl/bundl-hero.png"); }
+
+.projects__hero--bundl02 {
+  background-color: #fd696e;
+  background-image: url("../img/bundl/bundl-hero-02.png"); }
 
 .projects__container {
   width: 100%;
@@ -286,7 +296,10 @@ aside {
 .projects__container--hub03,
 .projects__container--hub04,
 .projects__container--hub05,
-.projects__container--hub06 {
+.projects__container--hub06,
+.projects__container--bundl01,
+.projects__container--bundl02,
+.projects__container--bundl03 {
   height: 100vh;
   background-size: contain;
   background-repeat: no-repeat;
@@ -325,6 +338,15 @@ aside {
 .projects__container--hub06 {
   background-image: url("../img/hub/hub-exception.png"); }
 
+.projects__container--bundl01 {
+  background-image: url("../img/bundl/bundl-journey.png"); }
+
+.projects__container--bundl02 {
+  background-image: url("../img/bundl/bundl-map.png"); }
+
+.projects__container--bundl03 {
+  background-image: url("../img/bundl/bundl-wires.png"); }
+
 .projects p {
   font-weight: 400;
   color: #333;
@@ -346,6 +368,11 @@ aside {
   line-height: 1.4;
   color: #000;
   font-weight: 700; }
+
+li span {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.5; }
 
 .projects__footer {
   border-top: 2px solid #000;
@@ -372,6 +399,10 @@ aside {
 
 .u-marBot {
   margin-bottom: 6rem; }
+
+.u-borderNone {
+  border: none;
+  padding-top: 0; }
 
 .landing__header {
   width: 100%;
