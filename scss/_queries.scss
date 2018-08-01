@@ -39,8 +39,6 @@
   footer a {
     font-size: 1.3rem;
   }
-
-  // // Case studies
 }
 
 @media (max-width: 940px) {
@@ -69,7 +67,9 @@
   footer a {
     font-size: 1rem;
   }
-  // // Case studies
+
+  // Case studies
+
   .projects__intro,
   .projects__outro {
     padding: 8rem 10rem;
@@ -151,5 +151,100 @@
 
   .link__social {
     padding-bottom: 5px;
+  }
+
+  // Bio
+
+  .bio__left {
+    grid-area: left;
+    padding-bottom: 4rem;
+  }
+
+  .bio__right {
+    grid-area: right;
+    margin-bottom: 2rem;
+  }
+
+  aside {
+    height: 100%;
+    padding: $padding-m;
+
+    & .bio {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: minmax(max-content, 1fr);
+      grid-template-areas: 'right' 'left';
+      padding-top: 8rem;
+    }
+  }
+
+  aside .text__bio {
+    font-size: 1.7rem;
+    font-weight: 400;
+    line-height: 1.6;
+    padding-bottom: $padding-m;
+  }
+
+  // Case studies
+
+  .projects__intro {
+    padding: 12rem 2rem 4rem;
+  }
+
+  .projects__outro {
+    padding: 4rem 2rem 4rem;
+  }
+
+  .projects {
+    & h1 {
+      font-size: 4.4rem;
+    }
+  }
+
+  .projects__intro--summary,
+  .projects__outro--summary {
+    font-size: 1.8rem;
+    line-height: 1.8;
+  }
+
+  .projects__container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+
+    &--text {
+      padding: 2rem;
+    }
+  }
+
+  .projects__container--image,
+  .projects__container--gw01,
+  .projects__container--gw02,
+  .projects__container--gw03,
+  .projects__container--gw04,
+  .projects__container--hub01,
+  .projects__container--hub02,
+  .projects__container--hub03,
+  .projects__container--hub04,
+  .projects__container--hub05,
+  .projects__container--hub06,
+  .projects__container--bundl01,
+  .projects__container--bundl02,
+  .projects__container--bundl03 {
+    height: 50vh;
+    margin: $margin-m;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+  }
+
+  .projects__container--hub01,
+  .projects__container--bundl02 {
+    display: none;
+  }
+
+  .u-padBot {
+    padding: 0;
   }
 }
