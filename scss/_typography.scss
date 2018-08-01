@@ -63,7 +63,7 @@ h3.text__header {
 a.text__projects {
   font-family: 'Work Sans', sans-serif;
   font-weight: 600;
-  font-size: 12rem;
+  font-size: 11rem;
   line-height: 0.9;
 }
 
@@ -72,21 +72,18 @@ a.text__projects {
 }
 
 .text__projects--subtitle {
+  font-family: 'Asul', sans-serif;
   color: $color-black-lighten;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   padding-bottom: $padding-m;
   padding-left: $padding-s;
 }
 
-.text__projects--body,
 aside .text__bio {
-  font-size: 3rem;
+  font-size: 2.9rem;
   font-weight: 400;
   line-height: 1.5;
-}
-
-aside .text__bio {
-  line-height: 1.4;
+  padding-bottom: $padding-m;
 }
 
 footer p,

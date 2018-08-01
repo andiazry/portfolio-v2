@@ -48,26 +48,24 @@ h3.text__header {
 a.text__projects {
   font-family: 'Work Sans', sans-serif;
   font-weight: 600;
-  font-size: 12rem;
+  font-size: 11rem;
   line-height: 0.9; }
 
 .text__projects--title {
   font-size: 15rem; }
 
 .text__projects--subtitle {
+  font-family: 'Asul', sans-serif;
   color: #999999;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   padding-bottom: 2rem;
   padding-left: 1rem; }
 
-.text__projects--body,
 aside .text__bio {
-  font-size: 3rem;
+  font-size: 2.9rem;
   font-weight: 400;
-  line-height: 1.5; }
-
-aside .text__bio {
-  line-height: 1.4; }
+  line-height: 1.5;
+  padding-bottom: 2rem; }
 
 footer p,
 footer .link__social {
@@ -612,10 +610,8 @@ main {
   padding: 2rem;
   background: #faf9f7;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: 'left right' 'left right'; }
+  grid-template-columns: 1fr 1fr; }
   main .containerLeft {
-    grid-area: left;
     padding-right: 2rem;
     border-right: 1px solid #000;
     display: grid;
@@ -640,35 +636,27 @@ main {
       main .containerLeft__projects ul a:link, main .containerLeft__projects ul a:visited {
         text-decoration: none;
         color: #000; }
-  main .containerRight {
-    grid-area: right; }
-    main .containerRight__photo {
-      background-color: white;
-      background-image: url("/img/profilePhoto-min.jpg"); }
+  main .containerRight__photo {
+    background-color: white;
+    background-image: url("/img/profilePhoto-min.jpg"); }
 
 .project__overlay--01 {
   background-color: #d29e80;
-  background-image: url("/img/profilePhoto-min.jpg"); }
+  background-image: url("/img/greatwolf-main.png"); }
 
 .project__overlay--02 {
   background-color: #f6df81;
-  background-image: url("/img/profilePhoto-min.jpg"); }
+  background-image: url("/img/hub-main.png"); }
 
 .project__overlay--03 {
   background-color: #eddce0;
-  background-image: url("/img/arena-landing-03.png"); }
+  background-image: url("/img/bundl-main.png"); }
 
 .containerRight__photo,
 .project__overlay--01,
-.project__overlay--02 {
-  background-size: 70%;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 100%;
-  transition: background-color 0.3s ease; }
-
+.project__overlay--02,
 .project__overlay--03 {
-  background-size: 80%;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   height: 100%;
@@ -678,9 +666,8 @@ main {
 ================================================== */
 footer {
   width: 100vw;
-  height: 32rem;
   color: #000;
-  padding: 15rem 2rem;
+  padding: 12rem 2rem 4rem;
   border-top: 1px dashed #000;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr; }
