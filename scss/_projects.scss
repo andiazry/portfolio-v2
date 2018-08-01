@@ -251,6 +251,18 @@ li span {
   font-size: 2.2rem;
 }
 
+.projects__footer a {
+  text-decoration: none;
+
+  &:visited {
+    color: $color-black;
+  }
+
+  &:active {
+    color: $color-black;
+  }
+}
+
 .u-padBot {
   padding-bottom: 6rem;
 }

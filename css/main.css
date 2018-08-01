@@ -394,6 +394,13 @@ li span {
   font-weight: 700;
   font-size: 2.2rem; }
 
+.projects__footer a {
+  text-decoration: none; }
+  .projects__footer a:visited {
+    color: #000; }
+  .projects__footer a:active {
+    color: #000; }
+
 .u-padBot {
   padding-bottom: 6rem; }
 
