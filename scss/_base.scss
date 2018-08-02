@@ -18,7 +18,7 @@ html {
 body {
   background: $color-bg-main;
   cursor: url('../img/cursor--arrow.png'), auto;
-  // display: none;
+  display: none;
   animation: 0.5s moveUp;
 
   & a:hover {

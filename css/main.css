@@ -13,6 +13,7 @@ html {
 body {
   background: #faf9f7;
   cursor: url("../img/cursor--arrow.png"), auto;
+  display: none;
   -webkit-animation: 0.5s moveUp;
           animation: 0.5s moveUp; }
   body a:hover {
