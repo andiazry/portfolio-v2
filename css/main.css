@@ -277,6 +277,22 @@ main {
   height: 100%;
   transition: background-color 0.3s ease; }
 
+/* BUTTONS
+================================================== */
+.btn--top {
+  background-color: #000;
+  z-index: 999;
+  position: fixed;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  bottom: 2rem;
+  right: 2rem;
+  border-radius: 50%;
+  color: #fff;
+  width: 6rem;
+  height: 6rem; }
+
 /* FOOTER
 ================================================== */
 footer {
@@ -322,12 +338,16 @@ aside {
 .bio--resume {
   font-family: 'Asul', sans-serif;
   background-color: #fff;
-  color: #000 !important;
+  color: #000;
   text-align: center;
   margin-top: 4rem;
   padding: 1rem;
   border-radius: 0.4rem;
   width: 160px; }
+  .bio--resume:hover {
+    color: #fff;
+    background-color: #000;
+    border: 1px solid #fff; }
 
 .text__bio--email {
   font-family: 'Asul', sans-serif;

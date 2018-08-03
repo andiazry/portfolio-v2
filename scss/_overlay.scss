@@ -46,12 +46,18 @@ aside {
 .bio--resume {
   font-family: 'Asul', sans-serif;
   background-color: $color-white;
-  color: $color-black !important;
+  color: $color-black;
   text-align: center;
   margin-top: $margin-xl;
   padding: 1rem;
   border-radius: 0.4rem;
   width: 160px;
+
+  &:hover {
+    color: $color-white;
+    background-color: $color-black;
+    border: 1px solid $color-white;
+  }
 }
 
 .text__bio--email {

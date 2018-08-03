@@ -155,6 +155,24 @@ main {
   transition: background-color 0.3s ease;
 }
 
+/* BUTTONS
+================================================== */
+
+.btn--top {
+  background-color: $color-black;
+  z-index: 999;
+  position: fixed;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  bottom: $padding-m;
+  right: $padding-m;
+  border-radius: 50%;
+  color: $color-white;
+  width: 6rem;
+  height: 6rem;
+}
+
 /* FOOTER
 ================================================== */
 
